@@ -1498,7 +1498,7 @@
                 }), 300);
             }
             new Swiper(".mySwiper", {
-                slidesPerView: 9,
+                slidesPerView: 10,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev"
@@ -1511,8 +1511,7 @@
                         slidesPerView: 3
                     },
                     550: {
-                        slidesPerView: 4,
-                        spaceBetween: 15
+                        slidesPerView: 4
                     },
                     768: {
                         slidesPerView: 5
@@ -1524,7 +1523,7 @@
                         slidesPerView: 7
                     },
                     1268: {
-                        slidesPerView: 9
+                        slidesPerView: 10
                     }
                 }
             });
@@ -1557,7 +1556,7 @@
                         slidesPerView: 3.5
                     },
                     1138: {
-                        slidesPerView: 3.8
+                        slidesPerView: 4
                     },
                     1300: {
                         slidesPerView: 4.2
