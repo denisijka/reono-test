@@ -1530,65 +1530,37 @@
             });
             new Swiper(".mySwiperTwo", {
                 slidesPerView: 4.2,
-                spaceBetween: 20,
                 navigation: {
                     nextEl: ".swiper-button-nextTwo",
                     prevEl: ".swiper-button-prevTwo"
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1.1,
-                        spaceBetween: 15
+                        slidesPerView: 2.3
                     },
-                    446: {
-                        slidesPerView: 1.3,
-                        spaceBetween: 15
-                    },
-                    492: {
-                        slidesPerView: 1.5
-                    },
-                    537: {
-                        slidesPerView: 1.6
+                    400: {
+                        slidesPerView: 2.5
                     },
                     550: {
-                        slidesPerView: 1.8,
-                        spaceBetween: 20
+                        slidesPerView: 2.7
                     },
-                    599: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    655: {
-                        slidesPerView: 2.2,
-                        spaceBetween: 20
+                    629: {
+                        slidesPerView: 3.2
                     },
                     768: {
-                        slidesPerView: 2.6,
-                        spaceBetween: 20
+                        slidesPerView: 3.2
                     },
-                    948: {
-                        slidesPerView: 2.5,
-                        spaceBetween: 20
+                    824: {
+                        slidesPerView: 3.4
                     },
                     992: {
-                        slidesPerView: 2.8,
-                        spaceBetween: 20
-                    },
-                    1038: {
-                        slidesPerView: 3.2,
-                        spaceBetween: 20
+                        slidesPerView: 3.5
                     },
                     1138: {
-                        slidesPerView: 3.6,
-                        spaceBetween: 20
-                    },
-                    1247: {
-                        slidesPerView: 4,
-                        spaceBetween: 20
+                        slidesPerView: 3.8
                     },
                     1300: {
-                        slidesPerView: 4.2,
-                        spaceBetween: 20
+                        slidesPerView: 4.2
                     }
                 }
             });
