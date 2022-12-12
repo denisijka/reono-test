@@ -1497,6 +1497,53 @@
                     animOnScroll();
                 }), 300);
             }
+            new Swiper(".mySwiperVehicle", {
+                slidesPerView: 10,
+                spaceBetween: 25,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3,
+                        spaceBetween: 25
+                    },
+                    350: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 50
+                    },
+                    400: {
+                        slidesPerView: 3.6,
+                        spaceBetween: 20
+                    },
+                    430: {
+                        slidesPerView: 4
+                    },
+                    490: {
+                        slidesPerView: 4.5
+                    },
+                    560: {
+                        slidesPerView: 5
+                    },
+                    630: {
+                        slidesPerView: 5.4
+                    },
+                    768: {
+                        slidesPerView: 5.7
+                    },
+                    850: {
+                        slidesPerView: 6.6
+                    },
+                    992: {
+                        slidesPerView: 8
+                    },
+                    1250: {
+                        slidesPerView: 9
+                    },
+                    1415: {}
+                }
+            });
             new Swiper(".mySwiperTabs", {
                 slidesPerView: 5,
                 navigation: {
