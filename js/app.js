@@ -1497,6 +1497,35 @@
                     animOnScroll();
                 }), 300);
             }
+            new Swiper(".mySwiperTabs", {
+                slidesPerView: 5,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 2.8
+                    },
+                    350: {
+                        slidesPerView: 3.3
+                    },
+                    407: {
+                        slidesPerView: 4
+                    },
+                    470: {
+                        slidesPerView: 4.7
+                    },
+                    550: {
+                        slidesPerView: 5
+                    },
+                    768: {},
+                    850: {},
+                    992: {},
+                    1268: {},
+                    1415: {}
+                }
+            });
             new Swiper(".mySwiper", {
                 slidesPerView: 10,
                 navigation: {
@@ -1505,13 +1534,18 @@
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1
+                        slidesPerView: 2
                     },
-                    360: {
-                        slidesPerView: 3
+                    350: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
                     },
-                    550: {
-                        slidesPerView: 4
+                    450: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                    600: {
+                        slidesPerView: 5
                     },
                     768: {
                         slidesPerView: 5
@@ -1523,6 +1557,9 @@
                         slidesPerView: 7
                     },
                     1268: {
+                        slidesPerView: 8
+                    },
+                    1415: {
                         slidesPerView: 10
                     }
                 }
