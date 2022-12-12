@@ -6,40 +6,15 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221211205818">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221212072608">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- ------------------------- -->
-	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221211205818" />
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js?_v=20221211205818" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221212072608" />
 </head>
 
 <body>
 	<div class="wrapper">
-		<!-- <header class="header">
-	<div class="header__wrapper">
-		<div class="header__container">
-			<a href="home.html" class="header__column header__column_logo">
-				<img src="img/logo.svg" alt="logo">
-			</a>
-			<div class="header__column">
-				<button type="button" class="header__icon icon-menu"><span></span></button>
-				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul>
-							<li><a href="home.html">Нові Авто</a></li>
-							<li><a href="work.html">Вживані</a></li>
-							<li><a href="contact.html">Допомога</a></li>
-							<li><a href="contact.html">Контакти</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-</header> -->
 		<header class="header">
 			<div class="header__container">
 				<a href="" class="header__logo">
@@ -60,11 +35,6 @@
 							<button data-da=".menu,1099.98,first" class="action-header__login action-header__login_heart _icon-heart" type="button"></button>
 							<button class="action-header__login action-header__login_add _icon-add" type="button">Додати Оголошення</button>
 							<button data-da=".menu__body,1099.98,first" class="action-header__sign-up action-header__sign-up_user _icon-user" type="button"><span>Вхід</span><span>до особистий кабінету</span></button>
-							<!-- <select name="form[]" data-class-modif="lang">
-						<option value="1" selected>EN</option>
-						<option value="2">UA</option>
-						<option value="3">DE</option>
-					</select> -->
 						</div>
 					</nav>
 				</div>
@@ -192,13 +162,34 @@
 					</div>
 					<div class="main-filter__brand brand">
 						<div data-tabs class="brand__tabs tabs">
-							<nav data-tabs-titles class="tabs__navigation">
-								<button type="submit" class="tabs__title _tab-active">Популярні</button>
-								<button type="submit" class="tabs__title">Вживані</button>
-								<button type="submit" class="tabs__title">Електро</button>
-								<button type="submit" class="tabs__title">до 100 000км</button>
-								<button type="submit" class="tabs__title">до 20 000$</button>
-							</nav>
+							<!-- <nav class="tabs__navigation">
+									<div data-tabs-titles><button type="submit" class="tabs__title _tab-active">Популярні</button></div>
+									<div data-tabs-titles><button type="submit" class="tabs__title">Вживані</button></div>
+									<div data-tabs-titles><button type="submit" class="tabs__title">Електро</button></div>
+									<div data-tabs-titles><button type="submit" class="tabs__title">до 100 000км</button></div>
+									<div data-tabs-titles><button type="submit" class="tabs__title">до 20 000$</button></div>
+								</nav> -->
+							<div class="tabs__wrapper">
+								<div class="tabs__swiper swiper mySwiperTabs">
+									<div class="tabs__swiper-wrapper swiper-wrapper">
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title _tab-active">Популярні</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">Вживані</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">Електро</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">до 100 000км</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">до 20 000$</button></div>
+										</a>
+									</div>
+								</div>
+							</div>
 							<div data-tabs-body class="tabs__content">
 								<div class="tabs__body">
 									<!-- Swiper -->
@@ -1217,15 +1208,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221211205818"></script>
+	<script src="js/app.min.js?_v=20221212072608"></script>
 	<div class="overlay"></div>
 </body>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221211205818"></script>
-<!-- JQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20221211205818" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-
-<!-- GSAP for animation -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js?_v=20221211205818"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221212072608"></script>
 
 </html>
