@@ -1,636 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<title>Reono</title>
-		<meta charset="UTF-8">
-		<meta name="format-detection" content="telephone=no">
-		<!-- <style>body{opacity: 0;}</style> -->
-		<link rel="stylesheet" href="css/style.min.css?_v=20221212114638">
-		<link rel="shortcut icon" href="favicon.ico">
-		<!-- <meta name="robots" content="noindex, nofollow"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221212114638" />
-	</head>
+<head>
+	<title>Reono</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221212163154">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221212163154" />
+</head>
 
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="header__container">
-					<a href="" class="header__logo">
-						<img src="img/logo.svg" alt="Logo">
-					</a>
-					<div class="header__menu menu">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item menu__item_subline">Меню</li>
-								<li class="menu__item"><a href="" class="menu__link">Нові Авто</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Вживані</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Авто новини</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Допомога</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
-							</ul>
-							<div class="menu__action action-header">
-								<button data-da=".menu,1099.98,first" class="action-header__login action-header__login_heart _icon-heart" type="button"></button>
-								<button class="action-header__login action-header__login_add _icon-add" type="button">Додати Оголошення</button>
-								<button data-da=".menu__body,1099.98,first" class="action-header__sign-up action-header__sign-up_user _icon-user" type="button"><span>Вхід</span><span>до особистий кабінету</span></button>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_subline">Меню</li>
+							<li class="menu__item"><a href="" class="menu__link">Нові Авто</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Вживані</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Авто новини</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Допомога</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+						</ul>
+						<div class="menu__action action-header">
+							<button data-da=".menu,1099.98,first" class="action-header__login action-header__login_heart _icon-heart" type="button"></button>
+							<button class="action-header__login action-header__login_add _icon-add" type="button">Додати Оголошення</button>
+							<button data-da=".menu__body,1099.98,first" class="action-header__sign-up action-header__sign-up_user _icon-user" type="button"><span>Вхід</span><span>до особистий кабінету</span></button>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main-filter main-filter">
+				<div class="main-filter__container">
+					<div class="main-filter__search search">
+						<div class="search__top">
+							<h2 class="search__subtitle">Шукати</h2>
+							<div class="search__tabs">
+								<button type="button" id="" class="search__tab">Всі</button>
+								<button type="button" id="" class="search__tab">Вживані</button>
+								<button type="button" id="" class="search__tab">Нові</button>
 							</div>
-						</nav>
+						</div>
+						<div class="search__vehicle vehicle">
+							<div class="vehicle__swiper swiper mySwiperVehicle">
+								<div class="vehicle__swiper-wrapper swiper-wrapper">
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-sedan"><span>Легкові</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-moto"><span>Мото</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-bus"><span>Автобуси</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-minivan"><span>Мікроавтобуси</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-truck"><span>Вантажівки</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-tractor"><span>Спецтехніка</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-combine"><span>Сільгосптехніка</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-trailer"><span>Причепи</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-helicopter"><span>Повітряний</span></a></div>
+									<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-bout"><span>Водний</span></a></div>
+								</div>
+							</div>
+						</div>
+						<form data-dev data-popup-massage="#formMessage" method="POST" action="#" class="book__form form-book">
+							<div class="form-book__lines">
+								<div class="form-book__line form-book__line_select">
+									<select name="form[]" class="form">
+										<option value="1" selected>Марка/Модель</option>
+										<option value="2">Alfa Romeo</option>
+										<option value="3">Alpina</option>
+										<option value="3">Ariel</option>
+										<option value="3">ARO</option>
+										<option value="3">Ashok Leyland</option>
+										<option value="3">Aston Martin</option>
+										<option value="3">Audi</option>
+										<option value="3">Austin</option>
+										<option value="3">AZLK (Москвич)</option>
+										<option value="3">Beifang Benchi</option>
+									</select>
+								</div>
+								<div class="form-book__line form-book__line_data">
+									<!-- <div class="form-book__line"> -->
+									<div class="form-book__input form-book__input_datepicker">
+										<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required placeholder="Рік" data-datepicker class="input-dark">
+										<div class="form-book__icon _icon-arrow-small"></div>
+									</div>
+									<!-- </div> -->
+									<!-- <div class="form-book__line"> -->
+									<div class="form-book__input form-book__input_price">
+										<span>Ціна</span>
+										<div class="form-book__icon _icon-arrow-small"></div>
+									</div>
+									<!-- </div> -->
+								</div>
+								<div class="form-book__line form-book__line_select">
+									<select name="form[]" class="form _icon-arrow-small">
+										<option value="1" selected>Вся країна</option>
+										<option value="2">Київська область</option>
+										<option value="3">Вінницька область</option>
+										<option value="4">Волинська область</option>
+										<option value="5">Дніпропетровська область</option>
+										<option value="6">Івано-Франківська область</option>
+										<option value="7">Житомирська область</option>
+										<option value="8">Закарпаться область</option>
+										<option value="9">Львівська область</option>
+										<option value="10">Одеська область</option>
+										<option value="11">Сумська область</option>
+										<option value="12">Полтавська область</option>
+									</select>
+								</div>
+								<div class="search__buttons">
+									<button type="submit" class="search__button action-btn action-btn_gray">Розширений пошук</button>
+									<button type="submit" class="search__button action-btn action-btn_orange _icon-search">Пошук</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="main-filter__brand brand">
+						<div data-tabs class="brand__tabs tabs">
+							<div class="tabs__wrapper">
+								<div class="tabs__swiper swiper mySwiperTabs">
+									<div class="tabs__swiper-wrapper swiper-wrapper">
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title _tab-active">Популярні</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">Вживані</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">Електро</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">до 100 000км</button></div>
+										</a>
+										<a href="#" class="tabs__swiper-slide swiper-slide">
+											<div data-tabs-titles><button type="submit" class="tabs__title">до 20 000$</button></div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<!-- Swiper -->
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+										</div>
+									</div>
+									<div class="swiper-button-next _icon-arrow-small"></div>
+									<div class="swiper-button-prev _icon-arrow-small"></div>
+								</div>
+								<div class="tabs__body">
+									<!-- Swiper -->
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+										</div>
+									</div>
+									<div class="swiper-button-next _icon-arrow-small"></div>
+									<div class="swiper-button-prev _icon-arrow-small"></div>
+								</div>
+								<div class="tabs__body">
+									<!-- Swiper -->
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
+											</a>
+										</div>
+									</div>
+									<div class="swiper-button-next _icon-arrow-small"></div>
+									<div class="swiper-button-prev _icon-arrow-small"></div>
+								</div>
+								<div class="tabs__body">
+									<!-- Swiper -->
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+										</div>
+									</div>
+									<div class="swiper-button-next _icon-arrow-small"></div>
+									<div class="swiper-button-prev _icon-arrow-small"></div>
+								</div>
+								<div class="tabs__body">
+									<!-- Swiper -->
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
+											</a>
+											<a href="#" class="swiper-slide">
+												<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
+											</a>
+										</div>
+									</div>
+									<div class="swiper-button-next _icon-arrow-small"></div>
+									<div class="swiper-button-prev _icon-arrow-small"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</header>
-			<main class="page">
-				<section class="page__main-filter main-filter">
-					<div class="main-filter__container">
-						<div class="main-filter__search search">
-							<div class="search__top">
-								<h2 class="search__subtitle">Шукати</h2>
-								<div class="search__tabs">
-									<button type="button" id="" class="search__tab">Всі</button>
-									<button type="button" id="" class="search__tab">Вживані</button>
-									<button type="button" id="" class="search__tab">Нові</button>
-								</div>
-							</div>
-							<div class="search__vehicle vehicle">
-								<div class="vehicle__swiper swiper mySwiperVehicle">
-									<div class="vehicle__swiper-wrapper swiper-wrapper">
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-sedan"><span>Легкові</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-moto"><span>Мото</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-bus"><span>Автобуси</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-minivan"><span>Мікроавтобуси</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-truck"><span>Вантажівки</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-tractor"><span>Спецтехніка</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-combine"><span>Сільгосптехніка</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-trailer"><span>Причепи</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-helicopter"><span>Повітряний</span></a></div>
-										<div class="vehicle__swiper-slide swiper-slide"><a href="#" class="vehicle__link vehicle__link_col _icon-bout"><span>Водний</span></a></div>
-									</div>
-								</div>
-							</div>
-							<form data-dev data-popup-massage="#formMessage" method="POST" action="#" class="book__form form-book">
-								<div class="form-book__lines">
-									<div class="form-book__line">
-										<select name="form[]" class="form">
-											<option value="1" selected>Марка/Модель</option>
-											<option value="2">Alfa Romeo</option>
-											<option value="3">Alpina</option>
-											<option value="3">Ariel</option>
-											<option value="3">ARO</option>
-											<option value="3">Ashok Leyland</option>
-											<option value="3">Aston Martin</option>
-											<option value="3">Audi</option>
-											<option value="3">Austin</option>
-											<option value="3">AZLK (Москвич)</option>
-											<option value="3">Beifang Benchi</option>
-										</select>
-									</div>
-									<div class="form-book__line">
-										<div class="form-book__input _icon-arrow-small">
-											<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required placeholder="Рік" data-datepicker class="input-dark">
-										</div>
-									</div>
-									<div class="form-book__line">
-										<div class="form-book__input form-book__input_price _icon-arrow-small">
-											<span>Ціна</span>
-										</div>
-									</div>
-									<div class="form-book__line">
-										<select data-scroll name="form[]" class="form">
-											<option value="1" selected>Вся країна</option>
-											<option value="2">Київська область</option>
-											<option value="3">Вінницька область</option>
-											<option value="4">Волинська область</option>
-											<option value="5">Дніпропетровська область</option>
-											<option value="6">Івано-Франківська область</option>
-											<option value="7">Житомирська область</option>
-											<option value="8">Закарпаться область</option>
-											<option value="9">Львівська область</option>
-											<option value="10">Одеська область</option>
-											<option value="11">Сумська область</option>
-											<option value="12">Полтавська область</option>
-										</select>
-									</div>
-									<div class="search__buttons">
-										<button type="submit" class="search__button action-btn action-btn_gray">Розширений пошук</button>
-										<button type="submit" class="search__button action-btn action-btn_orange">Пошук</button>
-									</div>
-								</div>
-
-							</form>
+			</section>
+			<section class="page_propositions propositions">
+				<div class="propositions__container">
+					<div class="propositions__top">
+						<h2 class="propositions__title">ТОП-пропозиції</h2>
+						<div class="propositions__swiper-button">
+							<div class="swiper-button-prevTwo _icon-arrow-small"></div>
+							<div class="swiper-button-nextTwo _icon-arrow-small"></div>
 						</div>
-						<div class="main-filter__brand brand">
-							<div data-tabs class="brand__tabs tabs">
-								<div class="tabs__wrapper">
-									<div class="tabs__swiper swiper mySwiperTabs">
-										<div class="tabs__swiper-wrapper swiper-wrapper">
-											<a href="#" class="tabs__swiper-slide swiper-slide">
-												<div data-tabs-titles><button type="submit" class="tabs__title _tab-active">Популярні</button></div>
-											</a>
-											<a href="#" class="tabs__swiper-slide swiper-slide">
-												<div data-tabs-titles><button type="submit" class="tabs__title">Вживані</button></div>
-											</a>
-											<a href="#" class="tabs__swiper-slide swiper-slide">
-												<div data-tabs-titles><button type="submit" class="tabs__title">Електро</button></div>
-											</a>
-											<a href="#" class="tabs__swiper-slide swiper-slide">
-												<div data-tabs-titles><button type="submit" class="tabs__title">до 100 000км</button></div>
-											</a>
-											<a href="#" class="tabs__swiper-slide swiper-slide">
-												<div data-tabs-titles><button type="submit" class="tabs__title">до 20 000$</button></div>
-											</a>
+					</div>
+					<div class="propositions__swiper">
+						<div class="swiper mySwiperTwo">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/1.webp" type="image/webp"><img src="img/main/propositions/1.jpg" alt="Land-rover"></picture></div>
+										<h2 class="card__head-line">Land Rover Frelander 2011р.</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
 										</div>
-									</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+										</div>
+										<div class="card__price">
+											<span>14 500$</span>
+											<span>1 345 000Грн</span>
+										</div>
+									</a>
 								</div>
-								<div data-tabs-body class="tabs__content">
-									<div class="tabs__body">
-										<!-- Swiper -->
-										<div class="swiper mySwiper">
-											<div class="swiper-wrapper">
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-											</div>
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/2.webp" type="image/webp"><img src="img/main/propositions/2.jpg" alt="Renault"></picture></div>
+										<h2 class="card__head-line">Renault Megane 2011</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
 										</div>
-										<div class="swiper-button-next _icon-arrow-small"></div>
-										<div class="swiper-button-prev _icon-arrow-small"></div>
-									</div>
-									<div class="tabs__body">
-										<!-- Swiper -->
-										<div class="swiper mySwiper">
-											<div class="swiper-wrapper">
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-											</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
 										</div>
-										<div class="swiper-button-next _icon-arrow-small"></div>
-										<div class="swiper-button-prev _icon-arrow-small"></div>
-									</div>
-									<div class="tabs__body">
-										<!-- Swiper -->
-										<div class="swiper mySwiper">
-											<div class="swiper-wrapper">
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
-												</a>
-											</div>
+										<div class="card__price">
+											<span>12 200$</span>
+											<span>1 345 000Грн</span>
 										</div>
-										<div class="swiper-button-next _icon-arrow-small"></div>
-										<div class="swiper-button-prev _icon-arrow-small"></div>
-									</div>
-									<div class="tabs__body">
-										<!-- Swiper -->
-										<div class="swiper mySwiper">
-											<div class="swiper-wrapper">
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-											</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/3.webp" type="image/webp"><img src="img/main/propositions/3.jpg" alt="Volkswagen"></picture></div>
+										<h2 class="card__head-line">Volkswagen Golf 8 2018р.</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
 										</div>
-										<div class="swiper-button-next _icon-arrow-small"></div>
-										<div class="swiper-button-prev _icon-arrow-small"></div>
-									</div>
-									<div class="tabs__body">
-										<!-- Swiper -->
-										<div class="swiper mySwiper">
-											<div class="swiper-wrapper">
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mersedes.webp" type="image/webp"><img src="img/main/main-filter/brand/mersedes.png" alt="Mersedes"></picture></div>Mersedes
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/volkswagen.webp" type="image/webp"><img src="img/main/main-filter/brand/volkswagen.png" alt="Volkswagen"></picture></div>Volkswagen
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/ford.webp" type="image/webp"><img src="img/main/main-filter/brand/ford.png" alt="Ford"></picture></div>Ford
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/honda.webp" type="image/webp"><img src="img/main/main-filter/brand/honda.png" alt="Honda"></picture></div>Honda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/toyota.webp" type="image/webp"><img src="img/main/main-filter/brand/toyota.png" alt="Toyota"></picture></div>Toyota
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/skoda.webp" type="image/webp"><img src="img/main/main-filter/brand/skoda.png" alt="Skoda"></picture></div>Skoda
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/opel.webp" type="image/webp"><img src="img/main/main-filter/brand/opel.png" alt="Opel"></picture></div>Opel
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/renault.webp" type="image/webp"><img src="img/main/main-filter/brand/renault.png" alt="Renault"></picture></div>Renault
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/mitsubishi.webp" type="image/webp"><img src="img/main/main-filter/brand/mitsubishi.png" alt="Mitsubishi"></picture></div>Mitsubishi
-												</a>
-												<a href="#" class="swiper-slide">
-													<div class="swiper-slide__icon"><picture><source srcset="img/main/main-filter/brand/tesla.webp" type="image/webp"><img src="img/main/main-filter/brand/tesla.png" alt="Tesla"></picture></div>Tesla
-												</a>
-											</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
 										</div>
-										<div class="swiper-button-next _icon-arrow-small"></div>
-										<div class="swiper-button-prev _icon-arrow-small"></div>
-									</div>
+										<div class="card__price">
+											<span>14 500$</span>
+											<span>1 345 000Грн</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/4.webp" type="image/webp"><img src="img/main/propositions/4.jpg" alt="Mitsubishi"></picture></div>
+										<h2 class="card__head-line">Mitsubishi Pajero 2006р</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+										</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+										</div>
+										<div class="card__price">
+											<span>14 500$</span>
+											<span>1 345 000Грн</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/5.webp" type="image/webp"><img src="img/main/propositions/5.jpg" alt="Toyota Camry 2020"></picture></div>
+										<h2 class="card__head-line">Toyota Camry 2020</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+										</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+										</div>
+										<div class="card__price">
+											<span>21 900$</span>
+											<span>1 345 000Грн</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/2.webp" type="image/webp"><img src="img/main/propositions/2.jpg" alt="Toyota Camry 2020"></picture></div>
+										<h2 class="card__head-line">Toyota Camry 2020</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+										</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+										</div>
+										<div class="card__price">
+											<span>21 900$</span>
+											<span>1 345 000Грн</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="swiper-slide__card card" href="#">
+										<div class="card__img"><picture><source srcset="img/main/propositions/1.webp" type="image/webp"><img src="img/main/propositions/1.jpg" alt="Toyota Camry 2020"></picture></div>
+										<h2 class="card__head-line">Toyota Camry 2020</h2>
+										<div class="card__info">
+											<span class="card__date _icon-clock">20.11.2022</span>
+											<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+										</div>
+										<div class="card__features">
+											<span class="card__feature card__feature_range">70 000 км</span>
+											<span class="card__feature card__feature_transmission">Автомат</span>
+											<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+										</div>
+										<div class="card__price">
+											<span>21 900$</span>
+											<span>1 345 000Грн</span>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="page_propositions propositions">
-					<div class="propositions__container">
-						<div class="propositions__top">
-							<h2 class="propositions__title">ТОП-пропозиції</h2>
-							<div class="propositions__swiper-button">
-								<div class="swiper-button-prevTwo _icon-arrow-small"></div>
-								<div class="swiper-button-nextTwo _icon-arrow-small"></div>
-							</div>
-						</div>
-						<div class="propositions__swiper">
-							<div class="swiper mySwiperTwo">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/1.webp" type="image/webp"><img src="img/main/propositions/1.jpg" alt="Land-rover"></picture></div>
-											<h2 class="card__head-line">Land Rover Frelander 2011р.</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>14 500$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/2.webp" type="image/webp"><img src="img/main/propositions/2.jpg" alt="Renault"></picture></div>
-											<h2 class="card__head-line">Renault Megane 2011</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>12 200$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/3.webp" type="image/webp"><img src="img/main/propositions/3.jpg" alt="Volkswagen"></picture></div>
-											<h2 class="card__head-line">Volkswagen Golf 8 2018р.</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>14 500$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/4.webp" type="image/webp"><img src="img/main/propositions/4.jpg" alt="Mitsubishi"></picture></div>
-											<h2 class="card__head-line">Mitsubishi Pajero 2006р</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>14 500$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/5.webp" type="image/webp"><img src="img/main/propositions/5.jpg" alt="Toyota Camry 2020"></picture></div>
-											<h2 class="card__head-line">Toyota Camry 2020</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>21 900$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/2.webp" type="image/webp"><img src="img/main/propositions/2.jpg" alt="Toyota Camry 2020"></picture></div>
-											<h2 class="card__head-line">Toyota Camry 2020</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>21 900$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="swiper-slide__card card" href="#">
-											<div class="card__img"><picture><source srcset="img/main/propositions/1.webp" type="image/webp"><img src="img/main/propositions/1.jpg" alt="Toyota Camry 2020"></picture></div>
-											<h2 class="card__head-line">Toyota Camry 2020</h2>
-											<div class="card__info">
-												<span class="card__date _icon-clock">20.11.2022</span>
-												<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-											</div>
-											<div class="card__features">
-												<span class="card__feature card__feature_range">70 000 км</span>
-												<span class="card__feature card__feature_transmission">Автомат</span>
-												<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-											</div>
-											<div class="card__price">
-												<span>21 900$</span>
-												<span>1 345 000Грн</span>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+			</section>
+			<section class="catalog">
+				<div class="catalog__container">
+					<div class="catalog__top">
+						<h2 class="catalog__title">Останні додані оголошення</h2>
 					</div>
-				</section>
-				<section class="catalog">
-					<div class="catalog__container">
-						<div class="catalog__top">
-							<h2 class="catalog__title">Останні додані оголошення</h2>
-						</div>
-						<div class="catalog__wrapper">
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/1.webp" type="image/webp"><img src="img/main/catalog/1.jpg" alt="Volkswagen Passat Alltrack 4x4 Highline 4Motion 2018"></picture></div>
-								<div class="card__descr">
-									<h2 class="card__head-line">Volkswagen Passat Alltrack 4x4 Highline 4Motion 2018</h2>
-									<div class="card__info">
-										<span class="card__date _icon-clock">20.11.2022</span>
-										<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-									</div>
-									<div class="card__features">
-										<span class="card__feature card__feature_range">110 000 км</span>
-										<span class="card__feature card__feature_transmission">Автомат</span>
-										<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-									</div>
-									<div class="card__price">
-										<span>25 200$</span>
-										<span>1 345 000Грн</span>
-									</div>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/2.webp" type="image/webp"><img src="img/main/catalog/2.jpg" alt="Audi e-tron 2020"></picture></div>
-								<div class="card__descr">
-									<h2 class="card__head-line">Audi e-tron 2020</h2>
-									<div class="card__info">
-										<span class="card__date _icon-clock">20.11.2022</span>
-										<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-									</div>
-									<div class="card__features">
-										<span class="card__feature card__feature_range">56 000 км</span>
-										<span class="card__feature card__feature_transmission">Автомат</span>
-										<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-									</div>
-									<div class="card__price">
-										<span>48 400$</span>
-										<span>1 345 000Грн</span>
-									</div>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/3.webp" type="image/webp"><img src="img/main/catalog/3.jpg" alt="Volkswagen Golf GTI SPORT 2016"></picture></div>
-								<div class="card__descr">
-									<h2 class="card__head-line">Volkswagen Golf GTI SPORT 2016</h2>
-									<div class="card__info">
-										<span class="card__date _icon-clock">20.11.2022</span>
-										<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-									</div>
-									<div class="card__features">
-										<span class="card__feature card__feature_range">200 000 км</span>
-										<span class="card__feature card__feature_transmission">Автомат</span>
-										<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-									</div>
-									<div class="card__price">
-										<span>12 200$</span>
-										<span>1 345 000Грн</span>
-									</div>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/4.webp" type="image/webp"><img src="img/main/catalog/4.jpg" alt="BMW X5 eDrivePlugin 2016"></picture></div>
-								<div class="card__descr">
-									<h2 class="card__head-line">BMW X5 eDrivePlugin 2016</h2>
-									<div class="card__info">
-										<span class="card__date _icon-clock">20.11.2022</span>
-										<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-									</div>
-									<div class="card__features">
-										<span class="card__feature card__feature_range">64 000 км</span>
-										<span class="card__feature card__feature_transmission">Автомат</span>
-										<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-									</div>
-									<div class="card__price">
-										<span>39 500$</span>
-										<span>1 345 000Грн</span>
-									</div>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/5.webp" type="image/webp"><img src="img/main/catalog/5.jpg" alt="Volkswagen Jetta 1984"></picture></div>
-								<h2 class="card__head-line">Volkswagen Jetta 1984</h2>
+					<div class="catalog__wrapper">
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/1.webp" type="image/webp"><img src="img/main/catalog/1.jpg" alt="Volkswagen Passat Alltrack 4x4 Highline 4Motion 2018"></picture></div>
+							<div class="card__descr">
+								<h2 class="card__head-line">Volkswagen Passat Alltrack 4x4 Highline 4Motion 2018</h2>
 								<div class="card__info">
 									<span class="card__date _icon-clock">20.11.2022</span>
 									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
 								</div>
 								<div class="card__features">
-									<span class="card__feature card__feature_range">600 000 км</span>
+									<span class="card__feature card__feature_range">110 000 км</span>
 									<span class="card__feature card__feature_transmission">Автомат</span>
 									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
 								</div>
 								<div class="card__price">
-									<span>1 200$</span>
+									<span>25 200$</span>
 									<span>1 345 000Грн</span>
 								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/6.webp" type="image/webp"><img src="img/main/catalog/6.jpg" alt="Renault Megane 2007"></picture></div>
-								<h2 class="card__head-line">Renault Megane 2007</h2>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/2.webp" type="image/webp"><img src="img/main/catalog/2.jpg" alt="Audi e-tron 2020"></picture></div>
+							<div class="card__descr">
+								<h2 class="card__head-line">Audi e-tron 2020</h2>
 								<div class="card__info">
 									<span class="card__date _icon-clock">20.11.2022</span>
 									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
 								</div>
 								<div class="card__features">
-									<span class="card__feature card__feature_range">370 000 км</span>
+									<span class="card__feature card__feature_range">56 000 км</span>
+									<span class="card__feature card__feature_transmission">Автомат</span>
+									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+								</div>
+								<div class="card__price">
+									<span>48 400$</span>
+									<span>1 345 000Грн</span>
+								</div>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/3.webp" type="image/webp"><img src="img/main/catalog/3.jpg" alt="Volkswagen Golf GTI SPORT 2016"></picture></div>
+							<div class="card__descr">
+								<h2 class="card__head-line">Volkswagen Golf GTI SPORT 2016</h2>
+								<div class="card__info">
+									<span class="card__date _icon-clock">20.11.2022</span>
+									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+								</div>
+								<div class="card__features">
+									<span class="card__feature card__feature_range">200 000 км</span>
 									<span class="card__feature card__feature_transmission">Автомат</span>
 									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
 								</div>
@@ -638,519 +587,573 @@
 									<span>12 200$</span>
 									<span>1 345 000Грн</span>
 								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/7.webp" type="image/webp"><img src="img/main/catalog/7.jpg" alt="Mercedes-Benz S-Class 2015"></picture></div>
-								<h2 class="card__head-line">Mercedes-Benz S-Class 2015</h2>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/4.webp" type="image/webp"><img src="img/main/catalog/4.jpg" alt="BMW X5 eDrivePlugin 2016"></picture></div>
+							<div class="card__descr">
+								<h2 class="card__head-line">BMW X5 eDrivePlugin 2016</h2>
 								<div class="card__info">
 									<span class="card__date _icon-clock">20.11.2022</span>
 									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
 								</div>
 								<div class="card__features">
-									<span class="card__feature card__feature_range">100 000 км</span>
+									<span class="card__feature card__feature_range">64 000 км</span>
 									<span class="card__feature card__feature_transmission">Автомат</span>
 									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
 								</div>
 								<div class="card__price">
-									<span>73 900$</span>
+									<span>39 500$</span>
 									<span>1 345 000Грн</span>
 								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/8.webp" type="image/webp"><img src="img/main/catalog/8.jpg" alt="Volvo FH 13 2015"></picture></div>
-								<h2 class="card__head-line">Volvo FH 13 2015</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">999 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>49 000$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/9.webp" type="image/webp"><img src="img/main/catalog/9.jpg" alt="Mazda 6 GH 2009"></picture></div>
-								<h2 class="card__head-line">Mazda 6 GH 2009</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">70 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>8 700$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/10.webp" type="image/webp"><img src="img/main/catalog/10.jpg" alt="Honda CMX 500 Rebel 2021"></picture></div>
-								<h2 class="card__head-line">Honda CMX 500 Rebel 2021</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">70 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>8 800$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/11.webp" type="image/webp"><img src="img/main/catalog/11.jpg" alt="Toyota Camry 2020"></picture></div>
-								<h2 class="card__head-line">Toyota Camry 2020</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">70 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>21 900$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/12.webp" type="image/webp"><img src="img/main/catalog/12.jpg" alt="Silver Dorado 540 2006"></picture></div>
-								<h2 class="card__head-line">Silver Dorado 540 2006</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">70 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>17 000$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/13.webp" type="image/webp"><img src="img/main/catalog/13.jpg" alt="Mercedes-Benz Vito 2015"></picture></div>
-								<h2 class="card__head-line">Mercedes-Benz Vito 2015</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">70 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>8 700$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/14.webp" type="image/webp"><img src="img/main/catalog/14.jpg" alt="Hummingbird 300 LS 2019"></picture></div>
-								<h2 class="card__head-line">Hummingbird 300 LS 2019</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">Без пробігу</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>320 000$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/15.webp" type="image/webp"><img src="img/main/catalog/15.jpg" alt="Volkswagen ID.4 Crozz Pure Plus 2021"></picture></div>
-								<h2 class="card__head-line">Volkswagen ID.4 Crozz Pure Plus 2021</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">70 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>34 800$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/16.webp" type="image/webp"><img src="img/main/catalog/16.jpg" alt="Gottwald AMK 4622 1993"></picture></div>
-								<h2 class="card__head-line">Gottwald AMK 4622 1993</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">50 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>82 000$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/17.webp" type="image/webp"><img src="img/main/catalog/17.jpg" alt="BMW X6 2008"></picture></div>
-								<h2 class="card__head-line">BMW X6 2008</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">173 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>15 800$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/18.webp" type="image/webp"><img src="img/main/catalog/18.jpg" alt="Volkswagen Passat 1998"></picture></div>
-								<h2 class="card__head-line">Volkswagen Passat 1998</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">284 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>3 200$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/19.webp" type="image/webp"><img src="img/main/catalog/19.jpg" alt="Renault Trafic 2007"></picture></div>
-								<h2 class="card__head-line">Renault Trafic 2007</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">128 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>8 200$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-							<a class="catalog__card card" href="#">
-								<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/20.webp" type="image/webp"><img src="img/main/catalog/20.jpg" alt="MAN TGX 6 2014"></picture></div>
-								<h2 class="card__head-line">MAN TGX 6 2014</h2>
-								<div class="card__info">
-									<span class="card__date _icon-clock">20.11.2022</span>
-									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
-								</div>
-								<div class="card__features">
-									<span class="card__feature card__feature_range">767 000 км</span>
-									<span class="card__feature card__feature_transmission">Автомат</span>
-									<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
-								</div>
-								<div class="card__price">
-									<span>31 700$</span>
-									<span>1 345 000Грн</span>
-								</div>
-							</a>
-						</div>
-						<button type="submit" class="catalog__button show-more-btn">Дивитись всі оголошення</button>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/5.webp" type="image/webp"><img src="img/main/catalog/5.jpg" alt="Volkswagen Jetta 1984"></picture></div>
+							<h2 class="card__head-line">Volkswagen Jetta 1984</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">600 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>1 200$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/6.webp" type="image/webp"><img src="img/main/catalog/6.jpg" alt="Renault Megane 2007"></picture></div>
+							<h2 class="card__head-line">Renault Megane 2007</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">370 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>12 200$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/7.webp" type="image/webp"><img src="img/main/catalog/7.jpg" alt="Mercedes-Benz S-Class 2015"></picture></div>
+							<h2 class="card__head-line">Mercedes-Benz S-Class 2015</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">100 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>73 900$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/8.webp" type="image/webp"><img src="img/main/catalog/8.jpg" alt="Volvo FH 13 2015"></picture></div>
+							<h2 class="card__head-line">Volvo FH 13 2015</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">999 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>49 000$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/9.webp" type="image/webp"><img src="img/main/catalog/9.jpg" alt="Mazda 6 GH 2009"></picture></div>
+							<h2 class="card__head-line">Mazda 6 GH 2009</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">70 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>8 700$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/10.webp" type="image/webp"><img src="img/main/catalog/10.jpg" alt="Honda CMX 500 Rebel 2021"></picture></div>
+							<h2 class="card__head-line">Honda CMX 500 Rebel 2021</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">70 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>8 800$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/11.webp" type="image/webp"><img src="img/main/catalog/11.jpg" alt="Toyota Camry 2020"></picture></div>
+							<h2 class="card__head-line">Toyota Camry 2020</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">70 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>21 900$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/12.webp" type="image/webp"><img src="img/main/catalog/12.jpg" alt="Silver Dorado 540 2006"></picture></div>
+							<h2 class="card__head-line">Silver Dorado 540 2006</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">70 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>17 000$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/13.webp" type="image/webp"><img src="img/main/catalog/13.jpg" alt="Mercedes-Benz Vito 2015"></picture></div>
+							<h2 class="card__head-line">Mercedes-Benz Vito 2015</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">70 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>8 700$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/14.webp" type="image/webp"><img src="img/main/catalog/14.jpg" alt="Hummingbird 300 LS 2019"></picture></div>
+							<h2 class="card__head-line">Hummingbird 300 LS 2019</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">Без пробігу</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>320 000$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/15.webp" type="image/webp"><img src="img/main/catalog/15.jpg" alt="Volkswagen ID.4 Crozz Pure Plus 2021"></picture></div>
+							<h2 class="card__head-line">Volkswagen ID.4 Crozz Pure Plus 2021</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">70 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>34 800$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/16.webp" type="image/webp"><img src="img/main/catalog/16.jpg" alt="Gottwald AMK 4622 1993"></picture></div>
+							<h2 class="card__head-line">Gottwald AMK 4622 1993</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">50 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>82 000$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/17.webp" type="image/webp"><img src="img/main/catalog/17.jpg" alt="BMW X6 2008"></picture></div>
+							<h2 class="card__head-line">BMW X6 2008</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">173 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>15 800$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/18.webp" type="image/webp"><img src="img/main/catalog/18.jpg" alt="Volkswagen Passat 1998"></picture></div>
+							<h2 class="card__head-line">Volkswagen Passat 1998</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">284 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>3 200$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/19.webp" type="image/webp"><img src="img/main/catalog/19.jpg" alt="Renault Trafic 2007"></picture></div>
+							<h2 class="card__head-line">Renault Trafic 2007</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">128 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>8 200$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
+						<a class="catalog__card card" href="#">
+							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/20.webp" type="image/webp"><img src="img/main/catalog/20.jpg" alt="MAN TGX 6 2014"></picture></div>
+							<h2 class="card__head-line">MAN TGX 6 2014</h2>
+							<div class="card__info">
+								<span class="card__date _icon-clock">20.11.2022</span>
+								<span class="card__location _icon-map-pin">Івано-Франківськ</span>
+							</div>
+							<div class="card__features">
+								<span class="card__feature card__feature_range">767 000 км</span>
+								<span class="card__feature card__feature_transmission">Автомат</span>
+								<span class="card__feature card__feature_fuel">Бензин 1.6л</span>
+							</div>
+							<div class="card__price">
+								<span>31 700$</span>
+								<span>1 345 000Грн</span>
+							</div>
+						</a>
 					</div>
-				</section>
-				<section class="news">
-					<div class="news__container">
-						<div class="news__top">
-							<h2 class="news__title">Авто Новини</h2>
-						</div>
-						<div class="news__columns">
-							<div class="news__column">
-								<div class="news__big-img">
-									<picture><source srcset="img/main/news/turkish_car.webp" type="image/webp"><img src="img/main/news/turkish_car.jpg" alt="turkish_car"></picture>
-									<div class="news__label news__label_white">
+					<button type="submit" class="catalog__button show-more-btn">Дивитись всі оголошення</button>
+				</div>
+			</section>
+			<section class="news">
+				<div class="news__container">
+					<div class="news__top">
+						<h2 class="news__title">Авто Новини</h2>
+					</div>
+					<div class="news__columns">
+						<div class="news__column">
+							<div class="news__big-img">
+								<picture><source srcset="img/main/news/turkish_car.webp" type="image/webp"><img src="img/main/news/turkish_car.jpg" alt="turkish_car"></picture>
+								<div class="news__label news__label_white">
+									<div class="news__date">1 листопада 2022</div>
+									<a href="#" class="news__subline">Перший турецький електро кросовер зійшов з конвеєра</a>
+								</div>
+							</div>
+							<div class="news__wrapper">
+								<div class="news__small-img">
+									<picture><source srcset="img/main/news/hyunday_santa_fe.webp" type="image/webp"><img src="img/main/news/hyunday_santa_fe.jpg" alt="hyunday_santa_fe"></picture>
+									<div class="news__label news__label_small">
 										<div class="news__date">1 листопада 2022</div>
-										<a href="#" class="news__subline">Перший турецький електро кросовер зійшов з конвеєра</a>
+										<a href="#" class="news__subline">Опубліковано перші зображення нового Hyundai Santa Fe</a>
 									</div>
 								</div>
-								<div class="news__wrapper">
-									<div class="news__small-img">
-										<picture><source srcset="img/main/news/hyunday_santa_fe.webp" type="image/webp"><img src="img/main/news/hyunday_santa_fe.jpg" alt="hyunday_santa_fe"></picture>
-										<div class="news__label news__label_small">
-											<div class="news__date">1 листопада 2022</div>
-											<a href="#" class="news__subline">Опубліковано перші зображення нового Hyundai Santa Fe</a>
-										</div>
-									</div>
-									<div class="news__small-img">
-										<picture><source srcset="img/main/news/porshe_macan.webp" type="image/webp"><img src="img/main/news/porshe_macan.jpg" alt="porshe_macan"></picture>
-										<div class="news__label news__label_small">
-											<div class="news__date">1 листопада 2022</div>
-											<a href="#" class="news__subline">Porsche Macan 2023: спортивний люкс</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="news__column">
-								<div class="news__big-img">
-									<picture><source srcset="img/main/news/volvo_s60.webp" type="image/webp"><img src="img/main/news/volvo_s60.jpg" alt="volvo_s60"></picture>
-									<div class="news__label news__label_white">
+								<div class="news__small-img">
+									<picture><source srcset="img/main/news/porshe_macan.webp" type="image/webp"><img src="img/main/news/porshe_macan.jpg" alt="porshe_macan"></picture>
+									<div class="news__label news__label_small">
 										<div class="news__date">1 листопада 2022</div>
-										<a href="#" class="news__subline">Volvo призупинила продаж седана Volvo S60 у Великій Британії</a>
-									</div>
-								</div>
-								<div class="news__wrapper">
-									<div class="news__small-img">
-										<picture><source srcset="img/main/news/volvo_xc60.webp" type="image/webp"><img src="img/main/news/volvo_xc60.jpg" alt="volvo_xc60"></picture>
-										<div class="news__label news__label_small">
-											<div class="news__date">1 листопада 2022</div>
-											<a href="#" class="news__subline">Огляд Volvo XC60 2023: вишуканий крейсер</a>
-										</div>
-									</div>
-									<div class="news__small-img">
-										<picture><source srcset="img/main/news/chevrolet_bolt.webp" type="image/webp"><img src="img/main/news/chevrolet_bolt.jpg" alt="chevrolet_bolt"></picture>
-										<div class="news__label news__label_small">
-											<div class="news__date">1 листопада 2022</div>
-											<a href="#" class="news__subline">Електричний Chevrolet Bolt EUV 2023</a>
-										</div>
+										<a href="#" class="news__subline">Porsche Macan 2023: спортивний люкс</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="submit" class="news__button show-more-btn">Переглянути всі новини</button>
-					</div>
-				</section>
-				<section class="list-car">
-					<div class="list-car__container">
-						<div class="list-car__top">
-							<h2 class="list-car__title">Каталог авто</h2>
-							<div class="list-car__buttons">
-								<button type="submit" class="button">Марки</button>
-								<button type="submit" class="button">Тип</button>
-								<button type="submit" class="button">Регіон</button>
+						<div class="news__column">
+							<div class="news__big-img">
+								<picture><source srcset="img/main/news/volvo_s60.webp" type="image/webp"><img src="img/main/news/volvo_s60.jpg" alt="volvo_s60"></picture>
+								<div class="news__label news__label_white">
+									<div class="news__date">1 листопада 2022</div>
+									<a href="#" class="news__subline">Volvo призупинила продаж седана Volvo S60 у Великій Британії</a>
+								</div>
 							</div>
-						</div>
-						<div class="list-car__swiper">
-							<div class="swiper mySwiperThree">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="swiper-slide__wrapper">
-											<ul class="swiper-slide__list">
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ВАЗ</span><span>34 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Hyundai</span><span>33 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Toyota</span><span>30 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Daewoo</span><span>29 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mitsubishi</span><span>28 478</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mercedes-Benz </span><span>23 759</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Skoda </span><span>20 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Opel</span><span>18 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Volkswagen</span><span>16 470</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Renault</span><span>14 336</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Nissan</span><span>12 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Chevrolet</span><span>11 489</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Ford</span><span>10 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ЗАЗ</span><span>9 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>BMW</span><span>8 567</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mazda</span><span>7 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Kia</span><span>7 123</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Honda</span><span>6 473</span></a></li>
-											</ul>
-										</div>
+							<div class="news__wrapper">
+								<div class="news__small-img">
+									<picture><source srcset="img/main/news/volvo_xc60.webp" type="image/webp"><img src="img/main/news/volvo_xc60.jpg" alt="volvo_xc60"></picture>
+									<div class="news__label news__label_small">
+										<div class="news__date">1 листопада 2022</div>
+										<a href="#" class="news__subline">Огляд Volvo XC60 2023: вишуканий крейсер</a>
 									</div>
-									<div class="swiper-slide">
-										<div class="swiper-slide__wrapper">
-											<ul class="swiper-slide__list">
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Infiniti </span><span>34 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Chrysler</span><span>33 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Porsche</span><span>30 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Dacia</span><span>29 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Dodge</span><span>28 478</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>JAC</span><span>23 759</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ИЖ </span><span>20 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>BYD</span><span>18 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Jeep</span><span>16 470</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Богдан</span><span>14 336</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>MG</span><span>12 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Alfa Romeo </span><span>11 489</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Acura</span><span>10 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Jaguar Lifan </span><span>9 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Daihatsu</span><span>8 567</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mini</span><span>7 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Cadillac</span><span>7 123</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Lincoln</span><span>6 473</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper-slide__wrapper">
-											<ul class="swiper-slide__list">
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Lancia </span><span>34 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ЛуАЗ </span><span>33 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Saab</span><span>30 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Maserati</span><span>29 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Samand</span><span>28 478</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Hummer</span><span>23 759</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Chana </span><span>20 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>FAW</span><span>18 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Saipa </span><span>16 470</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Renault</span><span>14 336</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Bentley</span><span>12 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>VW</span><span>11 489</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Isuzu</span><span>10 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Pontiac</span><span>9 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ARO</span><span>8 567</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Samsung</span><span>7 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ГМК</span><span>7 123</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Wartburg</span><span>6 473</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper-slide__wrapper">
-											<ul class="swiper-slide__list">
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Ferrari</span><span>34 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ZX Auto </span><span>33 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>FUQI</span><span>30 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Zimmer</span><span>29 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Buick</span><span>28 478</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>SMA</span><span>23 759</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Asia </span><span>20 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mercury</span><span>18 657</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>selena</span><span>16 470</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>TIANMA</span><span>14 336</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>DiAu</span><span>12 578</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ЕРАЗ</span><span>11 489</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Aston Martin </span><span>10 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Vauxhall</span><span>9 789</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Datsun Soueast </span><span>8 567</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Asia Motors </span><span>7 678</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Willys</span><span>7 123</span></a></li>
-												<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Brilliance</span><span>6 473</span></a></li>
-											</ul>
-										</div>
+								</div>
+								<div class="news__small-img">
+									<picture><source srcset="img/main/news/chevrolet_bolt.webp" type="image/webp"><img src="img/main/news/chevrolet_bolt.jpg" alt="chevrolet_bolt"></picture>
+									<div class="news__label news__label_small">
+										<div class="news__date">1 листопада 2022</div>
+										<a href="#" class="news__subline">Електричний Chevrolet Bolt EUV 2023</a>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-						<div class="description">
-							<h3 class="description__subline">Reono.ua - оголошення про продаж автомобілів на найбільшому автобазарі України</h3>
-							<p class="description__text">Понад 25 000 пропозицій від приватних продавців з багатьох регіонів: Київ, Харків, Одеса, Львів, Рівне, Житомир та інші. Ви з легкістю можете отримати актуальну інформацію про тисячі автомобілів, що продаються, мотоцикли, мопеди, катери, причепи та інше, використовуючи широкий набір фільтрів і налаштувань. Продати свою машину (або будь-який інший тип транспорту), купити нову та дізнатися докладніше про новини на автомобільну та близько тематику – наш контент відділ відстежує найцікавіші новини та своєчасно публікує їх.</p>
-							<a href="#" class="description__link-details">Детальніше</a>
 						</div>
 					</div>
-				</section>
-			</main>
-			<footer class="footer">
-				<div class="footer__container">
-					<div class="footer__info">
-						<a href="" class="footer__logo"><img src="img/footer/logo.svg" alt="logo-footer"></a>
-						<div class="footer__soc">
-							<span class="footer__icon footer__icon_facebook"></span>
-							<span class="footer__icon footer__icon_insta"></span>
+					<button type="submit" class="news__button show-more-btn">Переглянути всі новини</button>
+				</div>
+			</section>
+			<section class="list-car">
+				<div class="list-car__container">
+					<div class="list-car__top">
+						<h2 class="list-car__title">Каталог авто</h2>
+						<div class="list-car__buttons">
+							<button type="submit" class="button">Марки</button>
+							<button type="submit" class="button">Тип</button>
+							<button type="submit" class="button">Регіон</button>
 						</div>
 					</div>
-					<nav data-spollers="500,max" class="footer__menu menu-footer">
-						<div class="menu-footer__column">
-							<button type="button" data-spoller class="menu-footer__title">Тип</button>
-							<div class="menu-footer__wrapper">
-								<ul class="menu-footer__list menu-footer__list_wrap">
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Легкові</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Мото</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Мікроавтобуси</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Автобуси</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Вантажівки</a>
-									</li>
-								</ul>
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Спецтехніка</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Сільгосптехніка</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Причепи</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Повітряний</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Водний</a>
-									</li>
-								</ul>
+					<div class="list-car__swiper">
+						<div class="swiper mySwiperThree">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper-slide__wrapper">
+										<ul class="swiper-slide__list">
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ВАЗ</span><span>34 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Hyundai</span><span>33 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Toyota</span><span>30 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Daewoo</span><span>29 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mitsubishi</span><span>28 478</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mercedes-Benz </span><span>23 759</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Skoda </span><span>20 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Opel</span><span>18 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Volkswagen</span><span>16 470</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Renault</span><span>14 336</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Nissan</span><span>12 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Chevrolet</span><span>11 489</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Ford</span><span>10 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ЗАЗ</span><span>9 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>BMW</span><span>8 567</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mazda</span><span>7 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Kia</span><span>7 123</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Honda</span><span>6 473</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__wrapper">
+										<ul class="swiper-slide__list">
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Infiniti </span><span>34 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Chrysler</span><span>33 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Porsche</span><span>30 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Dacia</span><span>29 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Dodge</span><span>28 478</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>JAC</span><span>23 759</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ИЖ </span><span>20 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>BYD</span><span>18 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Jeep</span><span>16 470</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Богдан</span><span>14 336</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>MG</span><span>12 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Alfa Romeo </span><span>11 489</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Acura</span><span>10 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Jaguar Lifan </span><span>9 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Daihatsu</span><span>8 567</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mini</span><span>7 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Cadillac</span><span>7 123</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Lincoln</span><span>6 473</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__wrapper">
+										<ul class="swiper-slide__list">
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Lancia </span><span>34 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ЛуАЗ </span><span>33 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Saab</span><span>30 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Maserati</span><span>29 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Samand</span><span>28 478</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Hummer</span><span>23 759</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Chana </span><span>20 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>FAW</span><span>18 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Saipa </span><span>16 470</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Renault</span><span>14 336</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Bentley</span><span>12 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>VW</span><span>11 489</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Isuzu</span><span>10 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Pontiac</span><span>9 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ARO</span><span>8 567</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Samsung</span><span>7 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ГМК</span><span>7 123</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Wartburg</span><span>6 473</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__wrapper">
+										<ul class="swiper-slide__list">
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Ferrari</span><span>34 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ZX Auto </span><span>33 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>FUQI</span><span>30 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Zimmer</span><span>29 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Buick</span><span>28 478</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>SMA</span><span>23 759</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Asia </span><span>20 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Mercury</span><span>18 657</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>selena</span><span>16 470</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>TIANMA</span><span>14 336</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>DiAu</span><span>12 578</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>ЕРАЗ</span><span>11 489</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Aston Martin </span><span>10 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Vauxhall</span><span>9 789</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Datsun Soueast </span><span>8 567</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Asia Motors </span><span>7 678</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Willys</span><span>7 123</span></a></li>
+											<li class="swiper-slide__item"><a href="#" class="swiper-slide__link"><span>Brilliance</span><span>6 473</span></a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="menu-footer__column">
-							<button type="button" data-spoller class="menu-footer__title">Інфо</button>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="description">
+						<h3 class="description__subline">Reono.ua - оголошення про продаж автомобілів на найбільшому автобазарі України</h3>
+						<p class="description__text">Понад 25 000 пропозицій від приватних продавців з багатьох регіонів: Київ, Харків, Одеса, Львів, Рівне, Житомир та інші. Ви з легкістю можете отримати актуальну інформацію про тисячі автомобілів, що продаються, мотоцикли, мопеди, катери, причепи та інше, використовуючи широкий набір фільтрів і налаштувань. Продати свою машину (або будь-який інший тип транспорту), купити нову та дізнатися докладніше про новини на автомобільну та близько тематику – наш контент відділ відстежує найцікавіші новини та своєчасно публікує їх.</p>
+						<a href="#" class="description__link-details">Детальніше</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info">
+					<a href="" class="footer__logo"><img src="img/footer/logo.svg" alt="logo-footer"></a>
+					<div class="footer__soc">
+						<span class="footer__icon footer__icon_facebook"></span>
+						<span class="footer__icon footer__icon_insta"></span>
+					</div>
+				</div>
+				<nav data-spollers="500,max" class="footer__menu menu-footer">
+					<div class="menu-footer__column">
+						<button type="button" data-spoller class="menu-footer__title">Тип</button>
+						<div class="menu-footer__wrapper">
+							<ul class="menu-footer__list menu-footer__list_wrap">
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Легкові</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Мото</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Мікроавтобуси</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Автобуси</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Вантажівки</a>
+								</li>
+							</ul>
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Про Нас</a>
+									<a href="" class="menu-footer__link">Спецтехніка</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Контакти</a>
+									<a href="" class="menu-footer__link">Сільгосптехніка</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Допомога</a>
+									<a href="" class="menu-footer__link">Причепи</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Пошук</a>
+									<a href="" class="menu-footer__link">Повітряний</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Авто Новини</a>
+									<a href="" class="menu-footer__link">Водний</a>
 								</li>
 							</ul>
 						</div>
-					</nav>
-					<div class="footer__actions">
-						<button class="action-header__login action-header__login_add action-header__login_footer _icon-add" type="button">Додати Оголошення</button>
-						<div class="footer__app app-footer">
-							<a href="" class="app-footer__item">
-								<img src="img/footer/master-card.svg" alt="master-card">
-							</a>
-							<a href="" class="app-footer__item">
-								<img src="img/footer/visa.svg" alt="visa">
-							</a>
-						</div>
-						<div class="footer__copy">
-							<span>Політика конфіденційності</span>
-							<span>2022 © reono.ua</span>
-						</div>
+					</div>
+					<div class="menu-footer__column">
+						<button type="button" data-spoller class="menu-footer__title">Інфо</button>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Про Нас</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Контакти</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Допомога</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Пошук</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Авто Новини</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="footer__actions">
+					<button class="action-header__login action-header__login_add action-header__login_footer _icon-add" type="button">Додати Оголошення</button>
+					<div class="footer__app app-footer">
+						<a href="" class="app-footer__item">
+							<img src="img/footer/master-card.svg" alt="master-card">
+						</a>
+						<a href="" class="app-footer__item">
+							<img src="img/footer/visa.svg" alt="visa">
+						</a>
+					</div>
+					<div class="footer__copy">
+						<span>Політика конфіденційності</span>
+						<span>2022 © reono.ua</span>
 					</div>
 				</div>
-			</footer>
-		</div>
-		<!-- <div id="popup" aria-hidden="true" class="popup">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close">Закрыть</button>
@@ -1160,9 +1163,9 @@
 		</div>
 	</div>
 </div> -->
-		<script src="js/app.min.js?_v=20221212114638"></script>
-		<div class="overlay"></div>
-	</body>
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221212114638"></script>
+	<script src="js/app.min.js?_v=20221212163154"></script>
+	<div class="overlay"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221212163154"></script>
 
 </html>
