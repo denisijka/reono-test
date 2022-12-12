@@ -1654,7 +1654,7 @@
             });
             new Swiper(".mySwiperThree", {
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 45,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
@@ -1664,20 +1664,16 @@
                         slidesPerView: 1
                     },
                     500: {
-                        slidesPerView: 2,
-                        spaceBetween: 50
+                        slidesPerView: 2
                     },
                     768: {
-                        slidesPerView: 3,
-                        spaceBetween: 50
+                        slidesPerView: 3
                     },
                     992: {
-                        slidesPerView: 3,
-                        spaceBetween: 50
+                        slidesPerView: 3
                     },
                     1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 50
+                        slidesPerView: 3
                     },
                     1300: {
                         slidesPerView: 4
