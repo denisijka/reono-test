@@ -1565,38 +1565,43 @@
                 }
             });
             new Swiper(".mySwiperTwo", {
-                slidesPerView: 4.2,
                 navigation: {
                     nextEl: ".swiper-button-nextTwo",
                     prevEl: ".swiper-button-prevTwo"
                 },
                 breakpoints: {
-                    320: {
-                        slidesPerView: 2.3
+                    340: {
+                        slidesPerView: 1.1
                     },
                     400: {
-                        slidesPerView: 2.5
+                        slidesPerView: 1.2
                     },
-                    550: {
-                        slidesPerView: 2.7
+                    450: {
+                        slidesPerView: 1.4
+                    },
+                    500: {
+                        slidesPerView: 1.7
                     },
                     629: {
-                        slidesPerView: 3.2
+                        slidesPerView: 2.1
                     },
                     768: {
-                        slidesPerView: 3.2
+                        slidesPerView: 2.4
                     },
                     824: {
-                        slidesPerView: 3.4
+                        slidesPerView: 2.7
                     },
                     992: {
-                        slidesPerView: 3.5
+                        slidesPerView: 3.2
                     },
                     1138: {
-                        slidesPerView: 4
+                        slidesPerView: 3.8
                     },
                     1300: {
                         slidesPerView: 4
+                    },
+                    1400: {
+                        slidesPerView: 4.3
                     }
                 }
             });
