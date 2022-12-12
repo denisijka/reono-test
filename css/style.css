@@ -527,6 +527,28 @@ body {
   color: #212529;
 }
 
+.action-btn_foot {
+  background-color: #F83D13;
+  color: #fff;
+  width: 206px;
+}
+
+@supports (width: clamp( 12.875rem , 23.1394230769rem  +  -11.7307692308vw , 20.5rem )) {
+  .action-btn_foot {
+    width: clamp( 12.875rem , 23.1394230769rem  +  -11.7307692308vw , 20.5rem );
+  }
+}
+
+@supports not (width: clamp( 12.875rem , 23.1394230769rem  +  -11.7307692308vw , 20.5rem )) {
+  .action-btn_foot {
+    width: calc(20.5rem + -7.625 * (100vw - 22.5rem) / 65);
+  }
+}
+
+.action-btn_foot._icon-add::before {
+  margin-right: 8px;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -1165,6 +1187,11 @@ textarea.input {
   letter-spacing: 0.03px;
 }
 
+[class*=_box-shadow] {
+  -webkit-box-shadow: 0px 4px 10px rgba(63, 63, 63, 0.12);
+          box-shadow: 0px 4px 10px rgba(63, 63, 63, 0.12);
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1213,6 +1240,7 @@ textarea.input {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background-color: #fff;
+  border-bottom: 1px solid #D3DAE0;
 }
 
 .header__container {
@@ -1813,6 +1841,9 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-book__line {
@@ -2164,7 +2195,7 @@ textarea.input {
 
 .swiper-button-next._icon-arrow-small::before,
 .swiper-button-prev._icon-arrow-small::before {
-  font-size: 29px;
+  font-size: 20px;
   color: #212529;
 }
 
@@ -2185,7 +2216,7 @@ textarea.input {
 }
 
 .swiper-button-next._icon-arrow-small::before {
-  font-size: 29px;
+  font-size: 20px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2279,7 +2310,7 @@ textarea.input {
 
 .propositions .swiper-button-nextTwo._icon-arrow-small::before,
 .propositions .swiper-button-prevTwo._icon-arrow-small::before {
-  font-size: 29px;
+  font-size: 20px;
 }
 
 .propositions .swiper-button-nextTwo._icon-arrow-small::before {
@@ -2313,10 +2344,11 @@ textarea.input {
   font-weight: 600;
   font-size: 18px;
   text-align: left;
+  line-height: 140%;
 }
 
 .card__head-line:not(:last-child) {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .card__info {
@@ -2328,7 +2360,7 @@ textarea.input {
 }
 
 .card__info:not(:last-child) {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .card__date:not(:last-child) {
@@ -2357,8 +2389,8 @@ textarea.input {
 }
 
 .card__features:not(:last-child) {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .card__feature {
