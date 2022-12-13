@@ -1617,38 +1617,29 @@
                     prevEl: ".swiper-button-prevTwo"
                 },
                 breakpoints: {
-                    340: {
+                    320: {
+                        slidesPerView: 1
+                    },
+                    390: {
+                        slidesPerView: 1.05
+                    },
+                    410: {
                         slidesPerView: 1.1
                     },
-                    400: {
-                        slidesPerView: 1.2
+                    576: {
+                        slidesPerView: 2
                     },
-                    450: {
-                        slidesPerView: 1.4
+                    900: {
+                        slidesPerView: 3
                     },
-                    500: {
-                        slidesPerView: 1.7
-                    },
-                    629: {
-                        slidesPerView: 2.1
-                    },
-                    768: {
-                        slidesPerView: 2.4
-                    },
-                    824: {
-                        slidesPerView: 2.7
-                    },
-                    992: {
-                        slidesPerView: 3.2
-                    },
-                    1138: {
-                        slidesPerView: 3.8
+                    1175: {
+                        slidesPerView: 4
                     },
                     1300: {
                         slidesPerView: 4
                     },
                     1400: {
-                        slidesPerView: 4.3
+                        slidesPerView: 4
                     }
                 }
             });
