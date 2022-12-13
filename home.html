@@ -6,11 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221212225139">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221213234242">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221212225139" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221213234242" />
 </head>
 
 <body>
@@ -33,8 +33,9 @@
 						</ul>
 						<div class="menu__action action-header">
 							<button data-da=".menu,1099.98,first" class="action-header__login action-header__login_heart _icon-heart" type="button"></button>
-							<button class="action-header__login action-header__login_add _icon-add" type="button">Додати Оголошення</button>
-							<button data-da=".menu__body,1099.98,first" class="action-header__sign-up action-header__sign-up_user _icon-user" type="button"><span>Вхід</span><span>до особистий кабінету</span></button>
+							<button data-da=".menu,1099.98,first" class="action-header__login action-btn action-btn_header-login action-btn_header-login-add action-btn_orange-hv _icon-add" type="button"></button>
+							<button class="action-header__login action-btn action-btn_header-login action-btn_orange-hv _icon-add _icon-add_b" type="button">Додати Оголошення</button>
+							<button data-da=".menu__body,1099.98,first" class="action-header__sign-up action-btn action-btn_header-sign-up_user action-btn_gray-hv _icon-user" type="button"><span>Вхід</span><span>до особистий кабінету</span></button>
 						</div>
 					</nav>
 				</div>
@@ -116,8 +117,8 @@
 									</select>
 								</div>
 								<div class="search__buttons">
-									<button type="submit" class="search__button action-btn action-btn_gray">Розширений пошук</button>
-									<button type="submit" class="search__button action-btn action-btn_orange _icon-search">Пошук</button>
+									<button type="submit" class="search__button action-btn action-btn_gray action-btn_gray-hv">Розширений пошук</button>
+									<button type="submit" class="search__button action-btn action-btn_orange action-btn_orange-hv _icon-search">Пошук</button>
 								</div>
 							</div>
 						</form>
@@ -147,7 +148,9 @@
 							</div>
 							<div data-tabs-body class="tabs__content">
 								<div class="tabs__body">
+									<div class="swiper-button-next _icon-arrow-small"></div>
 									<!-- Swiper -->
+									<!-- <div class="tabs__swiper"> -->
 									<div class="swiper mySwiper">
 										<div class="swiper-wrapper">
 											<a href="#" class="swiper-slide">
@@ -188,7 +191,8 @@
 											</a>
 										</div>
 									</div>
-									<div class="swiper-button-next _icon-arrow-small"></div>
+									<!-- </div> -->
+
 									<div class="swiper-button-prev _icon-arrow-small"></div>
 								</div>
 								<div class="tabs__body">
@@ -535,7 +539,7 @@
 						<a class="catalog__card card" href="#">
 							<div class="card__img card__img_catalog"><picture><source srcset="img/main/catalog/1.webp" type="image/webp"><img src="img/main/catalog/1.jpg" alt="Volkswagen Passat Alltrack 4x4 Highline 4Motion 2018"></picture></div>
 							<div class="card__descr">
-								<h2 class="card__head-line">Volkswagen Passat Alltrack 4x4 Highline 4Motion 2018</h2>
+								<h2 class="card__head-line">Volkswagen Passat Alltrack</h2>
 								<div class="card__info">
 									<span class="card__date _icon-clock">20.11.2022</span>
 									<span class="card__location _icon-map-pin">Івано-Франківськ</span>
@@ -891,7 +895,7 @@
 					</div>
 					<div class="news__columns">
 						<div class="news__column">
-							<div class="news__big-img">
+							<div class="news__big-img news__big-img_m">
 								<picture><source srcset="img/main/news/turkish_car.webp" type="image/webp"><img src="img/main/news/turkish_car.jpg" alt="turkish_car"></picture>
 								<div class="news__label news__label_white">
 									<div class="news__date">1 листопада 2022</div>
@@ -931,7 +935,7 @@
 										<a href="#" class="news__subline">Огляд Volvo XC60 2023: вишуканий крейсер</a>
 									</div>
 								</div>
-								<div class="news__small-img">
+								<div class="news__small-img news__small-img_nmb">
 									<picture><source srcset="img/main/news/chevrolet_bolt.webp" type="image/webp"><img src="img/main/news/chevrolet_bolt.jpg" alt="chevrolet_bolt"></picture>
 									<div class="news__label news__label_small">
 										<div class="news__date">1 листопада 2022</div>
@@ -1136,7 +1140,7 @@
 					</div>
 				</nav>
 				<div class="footer__actions">
-					<button class="footer__action-btn action-btn action-btn_foot _icon-add" type="button">Додати Оголошення</button>
+					<button class="footer__action-btn action-btn action-btn_foot action-btn_orange-hv _icon-add" type="button">Додати Оголошення</button>
 					<div class="footer__app app-footer">
 						<a href="" class="app-footer__item">
 							<img src="img/footer/master-card.svg" alt="master-card">
@@ -1163,9 +1167,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221212225139"></script>
+	<script src="js/app.min.js?_v=20221213234242"></script>
 	<div class="overlay"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221212225139"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221213234242"></script>
 
 </html>
