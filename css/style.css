@@ -538,6 +538,8 @@ body {
   width: auto;
   padding: 9px;
   z-index: 10;
+  background-color: #F83D13;
+  color: #fff;
 }
 
 .action-btn_header-sign-up_user {
