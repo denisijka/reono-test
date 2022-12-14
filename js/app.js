@@ -3192,14 +3192,18 @@
                     }
                 }
             });
-            var user_icon = document.querySelector(".form-book__input_price");
+            var user_icon = document.querySelector(".form-book__wrapper");
+            var iconArrowSmall = document.querySelector(".input-price");
             var user_menu = document.querySelector(".dropdown-price");
             user_icon.addEventListener("click", (function(e) {
                 user_menu.classList.toggle("_active");
-                console.log("drop");
+                iconArrowSmall.classList.toggle("_active-rotate");
             }));
             document.documentElement.addEventListener("click", (function(e) {
-                if (!e.target.closest(".user-header")) user_menu.classList.remove("_active");
+                if (!e.target.closest(".form-book__input_price")) {
+                    user_menu.classList.remove("_active");
+                    iconArrowSmall.classList.remove("_active-rotate");
+                }
             }));
         };
         window["FLS"] = true;
