@@ -2985,12 +2985,6 @@
         const da = new DynamicAdapt("max");
         da.init();
         window.onload = function() {
-            const headerElement = document.querySelector(".header");
-            const callback = function(entries, observer) {
-                if (entries[0].isIntersecting) headerElement.classList.remove("_scroll"); else headerElement.classList.add("_scroll");
-            };
-            const headerObserver = new IntersectionObserver(callback);
-            headerObserver.observe(headerElement);
             let link = document.querySelectorAll(".menu__body>ul>li>a");
             console.log(link);
             let url = document.location.href;
@@ -3024,10 +3018,6 @@
             new Swiper(".mySwiperVehicle", {
                 slidesPerView: 10,
                 spaceBetween: 25,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev"
-                },
                 breakpoints: {
                     320: {
                         slidesPerView: 3,
@@ -3103,6 +3093,9 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev"
                 },
+                speed: 200,
+                observer: true,
+                observeParents: true,
                 breakpoints: {
                     320: {
                         slidesPerView: 2
@@ -3140,6 +3133,7 @@
                     nextEl: ".swiper-button-nextTwo",
                     prevEl: ".swiper-button-prevTwo"
                 },
+                speed: 300,
                 breakpoints: {
                     320: {
                         slidesPerView: 1
@@ -3174,6 +3168,7 @@
                     el: ".swiper-pagination",
                     clickable: true
                 },
+                speed: 300,
                 breakpoints: {
                     320: {
                         slidesPerView: 1
@@ -3195,6 +3190,15 @@
                     }
                 }
             });
+            var user_icon = document.querySelector(".form-book__input_price");
+            var user_menu = document.querySelector(".dropdown-price");
+            user_icon.addEventListener("click", (function(e) {
+                user_menu.classList.toggle("_active");
+                console.log("drop");
+            }));
+            document.documentElement.addEventListener("click", (function(e) {
+                if (!e.target.closest(".user-header")) user_menu.classList.remove("_active");
+            }));
         };
         window["FLS"] = true;
         addLoadedClass();
