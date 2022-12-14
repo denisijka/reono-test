@@ -3018,6 +3018,7 @@
             new Swiper(".mySwiperVehicle", {
                 slidesPerView: 10,
                 spaceBetween: 25,
+                speed: 300,
                 breakpoints: {
                     320: {
                         slidesPerView: 3,
@@ -3064,6 +3065,7 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev"
                 },
+                speed: 300,
                 breakpoints: {
                     320: {
                         slidesPerView: 2.8
