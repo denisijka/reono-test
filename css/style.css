@@ -1737,6 +1737,11 @@ textarea.input {
   width: 100%;
 }
 
+.dropdown-price._active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -2305,8 +2310,28 @@ textarea.input {
   height: 60px !important;
 }
 
+.form-book__input_price ._active-rotate {
+  rotate: 180deg;
+}
+
 .form-book {
   margin-top: 32px;
+}
+
+.form-book__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.form-book__wrapper ._icon-arrow-small {
+  font-size: 20px;
 }
 
 .form-book__lines {
@@ -2472,6 +2497,7 @@ textarea.input {
 }
 
 .form-book__input_price {
+  cursor: pointer;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2520,7 +2546,8 @@ textarea.input {
 }
 
 .dropdown-price {
-  display: none !important;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   background-color: #fff;
   padding: 16px 16px 32px 16px;
@@ -4975,10 +5002,6 @@ textarea.input {
 
   .vehicle__link:hover {
     color: #F83D13;
-  }
-
-  .form-book__input_price:hover .dropdown-price {
-    display: block !important;
   }
 
   .tabs__title:hover {
