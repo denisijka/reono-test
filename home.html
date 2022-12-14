@@ -6,11 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221214000422">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221214163650">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221214000422" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221214163650" />
 </head>
 
 <body>
@@ -92,13 +92,49 @@
 										<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required placeholder="Рік" data-datepicker class="input-dark">
 										<div class="form-book__icon _icon-arrow-small"></div>
 									</div>
-									<!-- </div> -->
-									<!-- <div class="form-book__line"> -->
 									<div class="form-book__input form-book__input_price">
 										<span>Ціна</span>
 										<div class="form-book__icon _icon-arrow-small"></div>
+										<div class="form-book__dropdown dropdown-price">
+											<h3 class="dropdown-price__subtitle">Валюта</h3>
+											<div class="dropdown-price__wrapper">
+												<button class="dropdown-price__btn action-btn">$</button>
+												<button class="dropdown-price__btn action-btn">€</button>
+												<button class="dropdown-price__btn action-btn">Грн</button>
+											</div>
+											<!-- <h3 class="dropdown-price__subtitle">Ціна</h3> -->
+											<!--*  range =========== -->
+											<div class="dropdown-price__filter price-filter">
+												<h3 class="price-filter__subtitle">Ціна</h3>
+
+												<div data-range id="range" class="price-filter__body">
+
+													<div class="price-filter__inputs">
+														<div class="price-filter__line">
+															<!-- <span class="price-filter__text"></span>
+																<span class="price-filter__text"></span> -->
+															<input id="input-0" data-range-from="0" autocomplete="off" type="number" value="30" name="form[]" class="price-filter__input price-filter__input_first" />
+														</div>
+														<div class="price-filter__line">
+															<!-- <span class="price-filter__text"></span>
+																<span class="price-filter__text"></span> -->
+															<input id="input-1" data-range-to="2000" autocomplete="off" type="number" value="1500" name="form[]" class="price-filter__input" />
+														</div>
+													</div>
+													<div data-range-item class="price-filter__range"></div>
+													<!-- <div class="price-filter__filred-price filred-price">
+															<p>Price:</p>
+															<div class="filred-price__info">
+																<div id="text-small-price" class="filred-price__small"></div>
+																<div id="text-big-price" class="filred-price__big"></div>
+															</div>
+														</div> -->
+													<a href="#/" class="price-filter__button action-btn action-btn_orange action-btn_orange-hv">Застосувати</a>
+												</div>
+											</div>
+											<!--*  range =========== -->
+										</div>
 									</div>
-									<!-- </div> -->
 								</div>
 								<div class="form-book__line form-book__line_select">
 									<select name="form[]" class="form _icon-arrow-small">
@@ -1167,9 +1203,11 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221214000422"></script>
+	<script src="js/app.min.js?_v=20221214163650"></script>
 	<div class="overlay"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221214000422"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221214163650"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20221214163650"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20221214163650"></script>
 
 </html>
