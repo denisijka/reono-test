@@ -2754,6 +2754,10 @@ textarea.input {
   display: none;
 }
 
+.propositions {
+  background-color: #fff;
+}
+
 @supports (padding-top: clamp( 3.375rem , 2.1879496403rem  +  5.9352517986vw , 7.5rem )) {
   .propositions {
     padding-top: clamp( 3.375rem , 2.1879496403rem  +  5.9352517986vw , 7.5rem );
