@@ -1829,6 +1829,11 @@ textarea.input {
   margin-right: 86px;
 }
 
+.menu__item:nth-child(3),
+.menu__item:nth-child(4) {
+  display: none;
+}
+
 .menu__link {
   color: #212832;
   font-size: 1.0625rem;
@@ -3729,11 +3734,6 @@ textarea.input {
     display: none;
   }
 
-  .menu__item:nth-child(3),
-  .menu__item:nth-child(4) {
-    display: none;
-  }
-
   .action-header__login_second {
     display: none;
   }
@@ -3772,6 +3772,11 @@ textarea.input {
 }
 
 @media (min-width: 61.99875em) {
+  .menu__item:nth-child(3),
+  .menu__item:nth-child(4) {
+    display: block;
+  }
+
 @supports (margin-left: clamp( 0.625rem , 0.4451438849rem  +  0.8992805755vw , 1.25rem )) {
     .menu-footer {
       margin-left: clamp( 0.625rem , 0.4451438849rem  +  0.8992805755vw , 1.25rem );
