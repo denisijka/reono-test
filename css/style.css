@@ -4452,10 +4452,6 @@ textarea.input {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
   }
 
   .menu__body {
@@ -4634,8 +4630,6 @@ textarea.input {
 
   .action-header__login_first {
     width: 206px;
-    margin-right: 0 !important;
-    margin-left: 18px;
   }
 
   .action-header__login_heart {
