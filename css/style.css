@@ -599,191 +599,6 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-textarea:focus {
-  outline: none;
-}
-
-.input {
-  border-radius: 0 !important;
-  width: 100%;
-  display: block;
-  padding: 0px 20px;
-}
-
-.input-dark {
-  max-width: 100%;
-  width: 100%;
-  color: #6C757D;
-  font-size: 0.875rem;
-  background-color: transparent;
-}
-
-.input-dark._form-error {
-  border: 1px solid red;
-}
-
-textarea.input {
-  resize: none;
-  padding: 0px 0px;
-}
-
-.select {
-  position: relative;
-}
-
-.select__body {
-  position: relative;
-}
-
-.select__content {
-  font-size: 14px;
-  color: #6C757D;
-}
-
-.select__title {
-  color: inherit;
-  text-align: left;
-  background-color: #fff;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 4px;
-}
-
-.select__value {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 36px;
-  padding: 0 0.9375rem;
-  gap: 0.625rem;
-  border: 1px solid #D3DAE0;
-  border-radius: 2px;
-}
-
-.select__value > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.select__value:after {
-  content: "";
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 15px;
-          flex: 0 0 15px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: -10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/main/main-filter/arrow-small.svg");
-  background-repeat: no-repeat;
-  background-position: 45% 45%;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-._select-open .select__value:after {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-.select__value._select-pseudo-label::before {
-  content: attr(data-pseudo-label);
-  opacity: 0.5;
-}
-
-.select__text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.select__input {
-  width: 100%;
-  background-color: transparent;
-  height: 100%;
-}
-
-.select__options {
-  color: #000;
-  position: absolute;
-  top: 29px;
-  border-radius: 0 0 4px 4px;
-  min-width: 100%;
-  left: 0;
-  background-color: #fff;
-  border-top: 0;
-  border: 1px solid #d9d9d9;
-  border-top: 0;
-  padding: 10px 0px 5px 0px;
-}
-
-.select__scroll {
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 200px;
-}
-
-.select__option {
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  padding: 5px 15px;
-  color: inherit;
-}
-
-.select__option._select-selected {
-  background-color: #eee;
-}
-
-.select__row {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.select._select-open {
-  z-index: 5;
-}
-
-._select-tag {
-  cursor: pointer;
-}
-
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
@@ -1734,6 +1549,51 @@ textarea.input {
   visibility: visible;
 }
 
+.select {
+  border: 1px solid #D3DAE0;
+  padding: 0 10px;
+  position: relative;
+  height: 36px;
+}
+
+.select::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -5%;
+  left: 225px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("../img/main/main-filter/arrow-small.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  rotate: -90deg;
+}
+
+.select_cars::before {
+  left: 285px;
+}
+
+.select_country {
+  width: 240px;
+}
+
+.select > select {
+  width: 100%;
+  color: #6C757D;
+  font-size: 14px;
+  line-height: 2.5;
+  background: transparent;
+  border: 0;
+  overflow: hidden;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -2431,10 +2291,17 @@ textarea.input {
   width: 368px;
 }
 
+.form-book__select {
+  border: 1px solid #D3DAE0;
+  height: 36px;
+  width: 100%;
+}
+
 .form-book__input {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  max-width: 180px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5011,10 +4878,6 @@ textarea.input {
   .action-btn_gray-hv:active {
     background-color: #000;
     color: #fff;
-  }
-
-  .select__option:hover {
-    background: #d9d9d9;
   }
 
   .menu__link:hover {
