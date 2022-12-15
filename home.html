@@ -6,11 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221215120136">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221215151017">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221215120136" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221215151017" />
 </head>
 
 <body>
@@ -73,25 +73,43 @@
 						<form data-dev data-popup-massage="#formMessage" method="POST" action="#" class="book__form form-book">
 							<div class="form-book__lines">
 								<div class="form-book__line form-book__line_select">
-									<select name="form[]" class="form">
-										<option value="1" selected>Марка/Модель</option>
-										<option value="2">Alfa Romeo</option>
-										<option value="3">Alpina</option>
-										<option value="3">Ariel</option>
-										<option value="3">ARO</option>
-										<option value="3">Ashok Leyland</option>
-										<option value="3">Aston Martin</option>
-										<option value="3">Audi</option>
-										<option value="3">Austin</option>
-										<option value="3">AZLK (Москвич)</option>
-										<option value="3">Beifang Benchi</option>
-									</select>
+									<!-- <label for="cars"></label>
+										<select name="cars" id="cars" class="form-book__select">
+											<option value="1" selected>Марка/Модель</option>
+											<option value="2">Alfa Romeo</option>
+											<option value="3">Alpina</option>
+											<option value="3">Ariel</option>
+											<option value="3">ARO</option>
+											<option value="3">Ashok Leyland</option>
+											<option value="3">Aston Martin</option>
+											<option value="3">Audi</option>
+											<option value="3">Austin</option>
+											<option value="3">AZLK (Москвич)</option>
+											<option value="3">Beifang Benchi</option>
+										</select> -->
+									<div class="select select_cars">
+										<label for="cars"></label>
+										<select name="country" id="country" class="form-book__select">
+											<option value="1" selected>Марка/Модель</option>
+											<option value="2">Alfa Romeo</option>
+											<option value="3">Alpina</option>
+											<option value="3">Ariel</option>
+											<option value="3">ARO</option>
+											<option value="3">Ashok Leyland</option>
+											<option value="3">Aston Martin</option>
+											<option value="3">Audi</option>
+											<option value="3">Austin</option>
+											<option value="3">AZLK (Москвич)</option>
+											<option value="3">Beifang Benchi</option>
+										</select>
+									</div>
 								</div>
 								<div class="form-book__line form-book__line_data">
-									<!-- <div class="form-book__line"> -->
 									<div class="form-book__input form-book__input_datepicker">
-										<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required placeholder="Рік" data-datepicker class="input-dark">
-										<div class="form-book__icon _icon-arrow-small"></div>
+										<!-- <input autocomplete="off" type="text" name="form[]" data-error="Error" data-required placeholder="Рік" data-datepicker class="input-dark">
+											<div class="form-book__icon _icon-arrow-small"></div> -->
+										<label for="start"></label>
+										<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 									</div>
 									<div class="form-book__input form-book__input_price">
 										<div class="form-book__wrapper">
@@ -137,24 +155,25 @@
 											</div>
 											<!--*  range =========== -->
 										</div>
-
 									</div>
 								</div>
 								<div class="form-book__line form-book__line_select">
-									<select name="form[]" class="form _icon-arrow-small">
-										<option value="1" selected>Вся країна</option>
-										<option value="2">Київська область</option>
-										<option value="3">Вінницька область</option>
-										<option value="4">Волинська область</option>
-										<option value="5">Дніпропетровська область</option>
-										<option value="6">Івано-Франківська область</option>
-										<option value="7">Житомирська область</option>
-										<option value="8">Закарпаться область</option>
-										<option value="9">Львівська область</option>
-										<option value="10">Одеська область</option>
-										<option value="11">Сумська область</option>
-										<option value="12">Полтавська область</option>
-									</select>
+									<div class="select select_country">
+										<select name="country" id="country" class="form-book__select">
+											<option value="1" selected>Вся країна</option>
+											<option value="2">Київська область</option>
+											<option value="3">Вінницька область</option>
+											<option value="4">Волинська область</option>
+											<option value="5">Дніпропетровська область</option>
+											<option value="6">Івано-Франківська область</option>
+											<option value="7">Житомирська область</option>
+											<option value="8">Закарпаться область</option>
+											<option value="9">Львівська область</option>
+											<option value="10">Одеська область</option>
+											<option value="11">Сумська область</option>
+											<option value="12">Полтавська область</option>
+										</select>
+									</div>
 								</div>
 								<div class="search__buttons">
 									<button type="submit" class="search__button action-btn action-btn_gray action-btn_gray-hv">Розширений пошук</button>
@@ -1207,11 +1226,11 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221215120136"></script>
+	<script src="js/app.min.js?_v=20221215151017"></script>
 	<div class="overlay"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221215120136"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20221215120136"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20221215120136"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221215151017"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20221215151017"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20221215151017"></script>
 
 </html>
