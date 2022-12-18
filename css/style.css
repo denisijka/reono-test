@@ -1727,7 +1727,7 @@ body::after {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  top: 30%;
+  top: 30% !important;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1743,7 +1743,6 @@ body::after {
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #212529;
   border: none;
-  rotate: -90deg;
   width: 20px;
   height: 20px;
   background-image: url("../img/main/main-filter/arrow-small.svg");
