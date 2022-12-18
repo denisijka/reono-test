@@ -1702,7 +1702,7 @@ body::after {
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 36px !important;
-  color: #212529 !important;
+  color: #6C757D !important;
   position: relative;
 }
 
@@ -1726,7 +1726,7 @@ body::after {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  top: 13px !important;
+  top: 19px !important;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1762,7 +1762,6 @@ body::after {
 
 .select2-container--default .select2-selection--single {
   background-color: #fff !important;
-  border: 1px solid #6C757D !important;
   border-radius: 2px !important;
 }
 
