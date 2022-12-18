@@ -1687,8 +1687,7 @@ body::after {
 }
 
 .select2-container .select2-selection--single {
-  height: 36px;
-  border-radius: 0;
+  height: 36px !important;
   border-color: #D3DAE0 !important;
   font-size: 14px;
 }
@@ -1740,15 +1739,6 @@ body::after {
   left: 175px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-  border-color: #212529 !important;
-  border: none;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/main/main-filter/arrow-small.svg");
-  background-repeat: no-repeat;
-}
-
 .form-book__line_last-select .select2-container--default .select2-selection--single .select2-selection__arrow {
   left: 155px;
 }
@@ -1768,6 +1758,12 @@ body::after {
 
 .js-example-placeholder-multiple .js-states .form-control .select-three {
   width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff !important;
+  border: 1px solid #6C757D !important;
+  border-radius: 2px !important;
 }
 
 .header {
@@ -2412,9 +2408,6 @@ body::after {
 .form-book__line:nth-child(5) {
   max-width: 180px;
   margin-right: 22px;
-  height: 36px;
-  line-height: 36px;
-  border: 1px solid black;
 }
 
 .form-book__line_select-large {
