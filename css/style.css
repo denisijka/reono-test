@@ -1452,6 +1452,7 @@ body::after {
   width: 100%;
   position: relative;
   padding-bottom: 18px;
+  outline: none;
 }
 
 .popup__close::before {
@@ -1752,8 +1753,8 @@ body::after {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: transparent;
-  color: #F83D13;
+  background-color: transparent !important;
+  color: #F83D13 !important;
 }
 
 .js-example-placeholder-multiple .js-states .form-control .select-three {
@@ -2727,6 +2728,7 @@ body::after {
 .swiper-button-prev,
 .swiper-button-nextTwo,
 .swiper-button-prevTwo {
+  cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3251,7 +3253,7 @@ body::after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -5px;
+  margin: 0 -10px;
 }
 
 .catalog__card {
@@ -3281,7 +3283,7 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 27px;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .card__img_catalog {
@@ -3292,7 +3294,7 @@ body::after {
 }
 
 .card__img_catalog img {
-  width: 335px;
+  width: 342px;
 }
 
 .card__descr {
