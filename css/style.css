@@ -3220,21 +3220,21 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 16px;
+}
+
+.swiper-slide__model {
+  font-weight: 600;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.swiper-slide__link span {
-  font-size: 16px;
-}
-
-.swiper-slide__link span:first-child {
-  font-weight: 600;
-}
-
-.swiper-slide__link span:last-child {
+.swiper-slide__dist {
   color: #6C757D;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .list-car .swiper-pagination {
@@ -5333,7 +5333,8 @@ body::after {
     color: #F83D13;
   }
 
-  .swiper-slide__link:hover {
+  .swiper-slide__link:hover .swiper-slide__dist,
+  .swiper-slide__link:hover .swiper-slide__model {
     color: #F83D13;
   }
 
