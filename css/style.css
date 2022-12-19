@@ -1781,7 +1781,7 @@ body::after {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: transparent !important;
+  background-color: #F1F2F2 !important;
   color: #F83D13 !important;
 }
 
@@ -1789,13 +1789,50 @@ body::after {
   width: 100%;
 }
 
+.select2-search--dropdown {
+  display: none !important;
+}
+
 .select2-container--default .select2-selection--single {
   background-color: #fff !important;
   border-radius: 2px !important;
 }
 
+.select2-container--default .select2-results > .select2-results__options {
+  min-height: 396px;
+}
+
 .select2-results__option {
   font-size: 14px !important;
+  padding: 10px 17px 10px 17px !important;
+}
+
+.select2-results__options::-webkit-scrollbar {
+  width: 16px;
+  background-clip: padding-box;
+}
+
+.select2-results__options::-webkit-scrollbar-track {
+  background-color: transparent;
+  height: 8px;
+  background-clip: padding-box;
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+
+.select2-results__options::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: #D3DAE0;
+  height: 170px;
+  border-left: 4px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 0 solid transparent;
+}
+
+.select2-results__options::-webkit-scrollbar-button {
+  display: none;
 }
 
 .header {
@@ -4674,6 +4711,10 @@ body::after {
 
   .action-btn_header-sign-up_user {
     width: 333px;
+  }
+
+  .input-price._icon-arrow-small::before {
+    rotate: -90deg;
   }
 
   [data-fullscreen] {
