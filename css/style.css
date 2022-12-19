@@ -1737,7 +1737,7 @@ body::after {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  top: 12px !important;
+  top: 11px !important;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1759,6 +1759,13 @@ body::after {
   height: 20px !important;
   background-image: url("../img/main/main-filter/arrow-small.svg");
   background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  rotate: 90deg;
 }
 
 .form-book__line_last-select .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1785,6 +1792,10 @@ body::after {
 .select2-container--default .select2-selection--single {
   background-color: #fff !important;
   border-radius: 2px !important;
+}
+
+.select2-results__option {
+  font-size: 14px !important;
 }
 
 .header {
@@ -2149,6 +2160,9 @@ body::after {
 .menu-footer__link {
   line-height: 125%;
   font-size: 0.875rem;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .social-footer {
@@ -5269,7 +5283,7 @@ body::after {
   }
 
   .menu-footer__link:hover {
-    text-decoration: underline;
+    color: #fff;
   }
 
   .social-footer__item:hover {
