@@ -3069,7 +3069,7 @@ body::after {
 }
 
 .propositions__top:not(:last-child) {
-  margin-bottom: 0;
+  margin-bottom: 32px;
 }
 
 .propositions__swiper-button {
@@ -3525,8 +3525,12 @@ body::after {
           flex-direction: column;
 }
 
+.catalog .card:not(:last-child) {
+  margin-top: 35px;
+}
+
 .catalog__top {
-  margin-bottom: 0 !important;
+  margin-bottom: -22px !important;
 }
 
 .catalog__wrapper {
@@ -3575,7 +3579,6 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 27px;
   padding: 0 10px;
 }
 
