@@ -2970,6 +2970,10 @@ body::after {
           flex-direction: column;
 }
 
+.swiper-slide__item {
+  padding: 0 10px;
+}
+
 .swiper-slide__icon {
   margin-bottom: 10px;
 }
@@ -3579,7 +3583,6 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 10px;
 }
 
 .card__descr {
