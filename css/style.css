@@ -2826,7 +2826,7 @@ span.select2-selection–multiple[aria-expanded=true] {
 }
 
 .dropdown-data__button {
-  width: 100%;
+  width: 100% !important;
 }
 
 .dropdown-data-popup .select2-container {
