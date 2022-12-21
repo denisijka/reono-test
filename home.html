@@ -189,7 +189,13 @@
 														</label>
 													</div>
 												</div>
-												<a href="#/" class="dropdown-data__button action-btn action-btn_orange action-btn_orange-hv">Застосувати</a>
+												<button type="button" class="dropdown-data__button action-btn action-btn_orange action-btn_orange-hv">Застосувати</button>
+											</div>
+										</div>
+												<div data-popup="#popup-data" class="form-book__input form-book__input_data-popup">
+											<div class="form-book__wrapper-data">
+												<span>Рік Випуску</span>
+												<div class="input-data _icon-arrow-small"></div>
 											</div>
 										</div>
 									</div>
@@ -220,7 +226,7 @@
 															</div>
 														</div>
 														<div data-range-item class="price-filter__range"></div>
-														<a href="#/" class="price-filter__button action-btn action-btn_orange action-btn_orange-hv">Застосувати</a>
+														<button type="button" class="price-filter__button action-btn action-btn_orange action-btn_orange-hv">Застосувати</button>
 													</div>
 												</div>
 											</div>
@@ -1369,41 +1375,104 @@
 				</div>
 			</footer>
 		</div>
-		<div id="popup" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content">
+		
+	<div id="popup-price" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
 
 
-					<div class="input-price__dropdown-popup dropdown-price-popup">
-						<button data-close type="button" class="popup__close"></button>
-						<h3 class="dropdown-price__subtitle">Валюта</h3>
-						<div class="dropdown-price__wrapper">
-							<button class="dropdown-price__btn action-btn">$</button>
-							<button class="dropdown-price__btn action-btn">€</button>
-							<button class="dropdown-price__btn action-btn">Грн</button>
-						</div>
-						<div class="dropdown-price__filter price-filter">
-							<h3 class="price-filter__subtitle">Ціна</h3>
+				<div class="input-price__dropdown-popup dropdown-price-popup">
+					<button data-close type="button" class="popup__close"></button>
+					<h3 class="dropdown-price__subtitle">Валюта</h3>
+					<div class="dropdown-price__wrapper">
+						<button class="dropdown-price__btn action-btn">$</button>
+						<button class="dropdown-price__btn action-btn">€</button>
+						<button class="dropdown-price__btn action-btn">Грн</button>
+					</div>
+					<div class="dropdown-price__filter price-filter">
+						<h3 class="price-filter__subtitle">Ціна</h3>
 
-							<div data-range id="range" class="price-filter__body">
+						<div data-range id="range" class="price-filter__body">
 
-								<div class="price-filter__inputs">
-									<div class="price-filter__line">
-										<input id="input-0" data-range-from="0" autocomplete="off" type="number" value="30" name="form[]" class="price-filter__input price-filter__input_first" />
-									</div>
-									<div class="price-filter__line">
-										<input id="input-1" data-range-to="2000" autocomplete="off" type="number" value="1500" name="form[]" class="price-filter__input" />
-									</div>
+							<div class="price-filter__inputs">
+								<div class="price-filter__line">
+									<input id="input-0" data-range-from="0" autocomplete="off" type="number" value="30" name="form[]" class="price-filter__input price-filter__input_first" />
 								</div>
-								<div data-range-item class="price-filter__range"></div>
-								<a href="#/" class="price-filter__button action-btn action-btn_orange action-btn_orange-hv">Застосувати</a>
+								<div class="price-filter__line">
+									<input id="input-1" data-range-to="2000" autocomplete="off" type="number" value="1500" name="form[]" class="price-filter__input" />
+								</div>
 							</div>
+							<div data-range-item class="price-filter__range"></div>
+
 						</div>
 					</div>
-
+					<div class="dropdown-data__btns dropdown-btns">
+						<button type="button" class="dropdown-data__button dropdown-btn action-btn ">Скасувати</button>
+						<button type="button" class="dropdown-data__button dropdown-btn action-btn action-btn_orange action-btn_orange-hv">Застосувати</button>
+					</div>
 				</div>
+
 			</div>
 		</div>
+	</div>
+	<div id="popup-data" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="input-data__data-dropdown-popup dropdown-data-popup">
+					<button data-close type="button" class="popup__close"></button>
+					<h3 class="dropdown-data__subtitle">Рік</h3>
+					<div class="dropdown-data__lines">
+						<div class="dropdown-data__line">
+							<label for="id_label_multiple">
+								<select class="js-example-placeholder-multiple js-states form-control select-first select-data-first" id="myBox">
+									<option value="1" selected>Від</option>
+									<option value="1">2010</option>
+									<option value="2">2011</option>
+									<option value="3">2012</option>
+									<option value="4">2013</option>
+									<option value="5">2014</option>
+									<option value="6">2015</option>
+									<option value="7">2016</option>
+									<option value="8">2017</option>
+									<option value="9">2018</option>
+									<option value="10">2019</option>
+									<option value="1">2020</option>
+									<option value="2">2021</option>
+									<option value="3">2022</option>
+								</select>
+							</label>
+						</div>
+						<div class="dropdown-data__line">
+							<label for="id_label_multiple">
+								<select class="js-example-placeholder-multiple js-states form-control select-first">
+									<option value="1" selected>До</option>
+									<option value="1">2010</option>
+									<option value="2">2011</option>
+									<option value="3">2012</option>
+									<option value="4">2013</option>
+									<option value="5">2014</option>
+									<option value="6">2015</option>
+									<option value="7">2016</option>
+									<option value="8">2017</option>
+									<option value="9">2018</option>
+									<option value="10">2019</option>
+									<option value="1">2020</option>
+									<option value="2">2021</option>
+									<option value="3">2022</option>
+								</select>
+							</label>
+						</div>
+					</div>
+					<div class="dropdown-data__btns dropdown-btns">
+						<button type="button" class="dropdown-data__button dropdown-btn action-btn ">Скасувати</button>
+						<button type="button" class="dropdown-data__button dropdown-btn action-btn action-btn_orange action-btn_orange-hv">Застосувати</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+		
 		<script src="js/app.min.js?_v=20221218143417"></script>
 		<div class="overlay"></div>
 	</body>
