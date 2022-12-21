@@ -502,7 +502,7 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 9px 5px;
+  padding: 11px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1692,7 +1692,8 @@ body::after {
   width: 100%;
 }
 
-.dropdown-price._active {
+.dropdown-price._active,
+.dropdown-data._active {
   opacity: 1;
   visibility: visible;
 }
@@ -1764,6 +1765,11 @@ body::after {
   transition: all 0.3s ease 0s;
 }
 
+.dropdown-data .select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 10px !important;
+  left: 85px;
+}
+
 .select2-container--open .select2-selection--single .select2-selection__arrow b {
   rotate: 90deg;
 }
@@ -1772,8 +1778,13 @@ body::after {
   left: 155px;
 }
 
-.select2-dropdown {
-  width: 200px;
+.select2-dropdown--below {
+  width: 296px !important;
+  margin-top: 8px;
+  -webkit-box-shadow: 0px -2px 4px rgba(63, 63, 63, 0.1), 0px 4px 10px rgba(63, 63, 63, 0.12);
+          box-shadow: 0px -2px 4px rgba(63, 63, 63, 0.1), 0px 4px 10px rgba(63, 63, 63, 0.12);
+  border-radius: 2px;
+  border: none !important;
 }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
@@ -1787,10 +1798,6 @@ body::after {
 
 .js-example-placeholder-multiple .js-states .form-control .select-three {
   width: 100%;
-}
-
-.select2-search--dropdown {
-  display: none !important;
 }
 
 .select2-container--default .select2-selection--single {
@@ -2563,7 +2570,8 @@ body::after {
   height: 60px !important;
 }
 
-.form-book__input_price ._active-rotate {
+.form-book__input_price ._active-rotate,
+.form-book__input_data ._active-rotate {
   rotate: 180deg;
 }
 
@@ -2571,7 +2579,8 @@ body::after {
   margin-top: 32px;
 }
 
-.form-book__wrapper {
+.form-book__wrapper,
+.form-book__wrapper-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2586,7 +2595,8 @@ body::after {
   padding: 10px 0;
 }
 
-.form-book__wrapper ._icon-arrow-small {
+.form-book__wrapper ._icon-arrow-small,
+.form-book__wrapper-data ._icon-arrow-small {
   font-size: 20px;
 }
 
@@ -2707,7 +2717,8 @@ body::after {
   margin: 10px 0px 0px 0px;
 }
 
-.form-book__input_price {
+.form-book__input_price,
+.form-book__input_data {
   cursor: pointer;
   position: relative;
   display: -webkit-box;
@@ -2723,7 +2734,8 @@ body::after {
   font-size: 20px;
 }
 
-.form-book__input_price span {
+.form-book__input_price span,
+.form-book__input_data span {
   color: #6C757D;
 }
 
@@ -2734,7 +2746,7 @@ body::after {
 }
 
 .form-book__input_price ._icon-arrow-small,
-.form-book__input_datepicker ._icon-arrow-small {
+.form-book__input_data ._icon-arrow-small {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -2744,7 +2756,7 @@ body::after {
 }
 
 .form-book__input_price ._icon-arrow-small:focus,
-.form-book__input_datepicker ._icon-arrow-small:focus {
+.form-book__input_data ._icon-arrow-small:focus {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -2767,7 +2779,7 @@ body::after {
   -webkit-box-shadow: 0px -2px 4px rgba(63, 63, 63, 0.1), 0px 4px 10px rgba(63, 63, 63, 0.12);
           box-shadow: 0px -2px 4px rgba(63, 63, 63, 0.1), 0px 4px 10px rgba(63, 63, 63, 0.12);
   border-radius: 4px;
-  top: 120%;
+  top: 133%;
   left: 0;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2812,6 +2824,8 @@ body::after {
 }
 
 .dropdown-data {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   background-color: #fff;
   padding: 16px 16px 32px 16px;
@@ -2826,11 +2840,24 @@ body::after {
   -webkit-box-shadow: 0px -2px 4px rgba(63, 63, 63, 0.1), 0px 4px 10px rgba(63, 63, 63, 0.12);
           box-shadow: 0px -2px 4px rgba(63, 63, 63, 0.1), 0px 4px 10px rgba(63, 63, 63, 0.12);
   border-radius: 4px;
-  top: 120%;
+  top: 133%;
   left: 0;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.dropdown-data .select2-container--open .select2-dropdown--below {
+  width: 160px !important;
+}
+
+.dropdown-data__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dropdown-data__subtitle:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .dropdown-data__lines {
@@ -2844,6 +2871,51 @@ body::after {
 
 .dropdown-data__lines:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.dropdown-data__line {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  max-width: 100%;
+}
+
+.dropdown-data__line:first-child {
+  position: relative;
+  margin-right: 44px;
+}
+
+.dropdown-data__line:first-child::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 1px;
+  top: 50%;
+  left: 120%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #D3DAE0;
+}
+
+.dropdown-data .select2-container {
+  width: 112px !important;
+}
+
+.dropdown-data .select2-dropdown--below {
+  width: 100px !important;
+}
+
+.dropdown-data__button {
+  width: 100%;
+}
+
+.dropdown-data-popup .select2-container {
+  width: 142px !important;
+}
+
+.dropdown-data-popup .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  left: 10px;
 }
 
 .main-filter .swiper {
@@ -4026,7 +4098,8 @@ body::after {
     margin-right: 32px;
   }
 
-  .form-book__input_price-popup {
+  .form-book__input_price-popup,
+  .form-book__input_data-popup {
     display: none;
   }
 
@@ -4970,7 +5043,8 @@ body::after {
     width: 333px;
   }
 
-  .input-price._icon-arrow-small::before {
+  .input-price._icon-arrow-small::before,
+  .input-data._icon-arrow-small::before {
     rotate: -90deg;
   }
 
@@ -5277,7 +5351,8 @@ body::after {
     width: 100%;
   }
 
-  .form-book__input_price {
+  .form-book__input_price,
+  .form-book__input_data {
     display: none;
   }
 
