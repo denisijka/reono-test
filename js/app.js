@@ -2399,7 +2399,8 @@
                 speed: 300,
                 breakpoints: {
                     320: {
-                        slidesPerView: 3
+                        slidesPerView: 3,
+                        spaceBetween: 0
                     },
                     350: {
                         slidesPerView: 3.5
@@ -2414,24 +2415,31 @@
                         slidesPerView: 4.5
                     },
                     560: {
-                        slidesPerView: 5
+                        slidesPerView: 5,
+                        spaceBetween: 0
                     },
                     630: {
-                        slidesPerView: 5.4
+                        slidesPerView: 5.4,
+                        spaceBetween: 10
                     },
                     768: {
-                        slidesPerView: 5.7
+                        slidesPerView: 5.7,
+                        spaceBetween: 10
                     },
                     850: {
-                        slidesPerView: 6.6
+                        slidesPerView: 6.6,
+                        spaceBetween: 10
                     },
                     992: {
-                        slidesPerView: 8
+                        slidesPerView: 8,
+                        spaceBetween: 15
                     },
                     1250: {
                         slidesPerView: 9
                     },
-                    1415: {}
+                    1415: {
+                        spaceBetween: 24
+                    }
                 }
             });
             new Swiper(".mySwiperTabs", {
