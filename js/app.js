@@ -2396,20 +2396,16 @@
             }
             new Swiper(".mySwiperVehicle", {
                 slidesPerView: 10,
-                spaceBetween: 25,
                 speed: 300,
                 breakpoints: {
                     320: {
-                        slidesPerView: 3,
-                        spaceBetween: 25
+                        slidesPerView: 3
                     },
                     350: {
-                        slidesPerView: 3.5,
-                        spaceBetween: 50
+                        slidesPerView: 3.5
                     },
                     400: {
-                        slidesPerView: 3.6,
-                        spaceBetween: 20
+                        slidesPerView: 3.6
                     },
                     430: {
                         slidesPerView: 4
@@ -2571,12 +2567,25 @@
                     }
                 }
             });
+            var user_iconData = document.querySelector(".form-book__wrapper-data");
+            var iconArrowSmallData = document.querySelector(".input-data");
+            var user_menuData = document.querySelector(".dropdown-data");
             var user_icon = document.querySelector(".form-book__wrapper");
             var iconArrowSmall = document.querySelector(".input-price");
             var user_menu = document.querySelector(".dropdown-price");
+            user_iconData.addEventListener("click", (function(e) {
+                user_menuData.classList.toggle("_active");
+                iconArrowSmallData.classList.toggle("_active-rotate");
+            }));
             user_icon.addEventListener("click", (function(e) {
                 user_menu.classList.toggle("_active");
                 iconArrowSmall.classList.toggle("_active-rotate");
+            }));
+            document.documentElement.addEventListener("click", (function(e) {
+                if (!e.target.closest(".form-book__input_data")) {
+                    user_menuData.classList.remove("_active");
+                    iconArrowSmallData.classList.remove("_active-rotate");
+                }
             }));
             document.documentElement.addEventListener("click", (function(e) {
                 if (!e.target.closest(".form-book__input_price")) {
@@ -2594,6 +2603,7 @@
                 $(".select-three").select2({
                     placeholder: "Вся країна"
                 });
+                $("#myBox").select2({});
             }));
         };
         window["FLS"] = true;
