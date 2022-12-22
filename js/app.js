@@ -2575,43 +2575,45 @@
                     }
                 }
             });
+            var formBookInputData = document.querySelector(".form-book__input_data");
+            var formBookInputPrice = document.querySelector(".form-book__input_price");
             var user_iconData = document.querySelector(".form-book__wrapper-data");
             var iconArrowSmallData = document.querySelector(".input-data");
             var user_menuData = document.querySelector(".dropdown-data");
-            var user_icon = document.querySelector(".form-book__wrapper");
+            var user_iconPrice = document.querySelector(".form-book__wrapper");
             var iconArrowSmall = document.querySelector(".input-price");
             var user_menu = document.querySelector(".dropdown-price");
             user_iconData.addEventListener("click", (function(e) {
                 user_menuData.classList.toggle("_active");
                 iconArrowSmallData.classList.toggle("_active-rotate");
+                formBookInputData.classList.toggle("_active-border");
             }));
-            user_icon.addEventListener("click", (function(e) {
+            user_iconPrice.addEventListener("click", (function(e) {
                 user_menu.classList.toggle("_active");
                 iconArrowSmall.classList.toggle("_active-rotate");
+                formBookInputPrice.classList.toggle("_active-border");
             }));
             document.documentElement.addEventListener("click", (function(e) {
                 if (!e.target.closest(".form-book__input_data")) {
                     user_menuData.classList.remove("_active");
                     iconArrowSmallData.classList.remove("_active-rotate");
+                    formBookInputData.classList.remove("_active-border");
                 }
             }));
             document.documentElement.addEventListener("click", (function(e) {
                 if (!e.target.closest(".form-book__input_price")) {
                     user_menu.classList.remove("_active");
                     iconArrowSmall.classList.remove("_active-rotate");
+                    formBookInputPrice.classList.remove("_active-border");
                 }
             }));
             $((function() {
-                $(".select-first").select2({
-                    placeholder: "Марка"
-                });
-                $(".select-second").select2({
-                    placeholder: "Select an option"
-                });
-                $(".select-three").select2({
-                    placeholder: "Вся країна"
-                });
-                $("#myBox").select2({});
+                $(".select-first").select2({});
+                $(".select-second").select2({});
+                $(".select-three").select2({});
+                $(".placeholderSearch").one("select2:open", (function(e) {
+                    $("input.select2-search__field").prop("placeholder", "Пошук..");
+                }));
             }));
         };
         window["FLS"] = true;
