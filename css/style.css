@@ -2418,11 +2418,6 @@ input.select2-search__field::placeholder {
   width: 103px;
 }
 
-.search__tab:first-child {
-  background-color: #F83D13;
-  color: #fff;
-}
-
 .search__tab:not(:last-child) {
   margin-right: 6px;
 }
@@ -2951,6 +2946,12 @@ input.select2-search__field::placeholder {
           transform: translateX(-50%);
   background-color: #D3DAE0;
   z-index: 10;
+}
+
+.tabs .swiper-slide {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .tabs__title {
@@ -3483,12 +3484,9 @@ input.select2-search__field::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.list-car__buttons button:first-child {
-  background-color: #F83D13;
-  color: #fff;
-  border: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .list-car__buttons button:not(:last-child) {
@@ -3606,9 +3604,6 @@ input.select2-search__field::placeholder {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
-}
-
-.catalog__item:not(:last-child) {
   margin-top: 35px;
 }
 
@@ -5778,7 +5773,6 @@ input.select2-search__field::placeholder {
   }
 
   .search__tab:hover {
-    background-color: #F83D13;
     color: #fff;
   }
 
@@ -5787,6 +5781,10 @@ input.select2-search__field::placeholder {
   }
 
   .vehicle .swiper-slide:hover {
+    color: #F83D13;
+  }
+
+  .tabs .swiper-slide:hover {
     color: #F83D13;
   }
 
@@ -5832,6 +5830,11 @@ input.select2-search__field::placeholder {
 
   .news__subline:hover {
     color: #F83D13;
+  }
+
+  .list-car__buttons button:hover {
+    color: #fff;
+    font-weight: 600;
   }
 
   .swiper-slide__link:hover .swiper-slide__dist,
