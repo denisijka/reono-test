@@ -1722,10 +1722,30 @@
                     }
                 }
             }));
+            if (document.querySelector(".action-header__sign-up")) document.addEventListener("click", (function(e) {
+                const overlay = document.querySelector(".overlay");
+                if (bodyLockStatus && e.target.closest(".action-header__sign-up")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open_login");
+                    if (!e.target.closest(".action-header__sign-up")) document.documentElement.classList.remove("menu-open_login");
+                    if (overlay) bodyLockToggle();
+                }
+            }));
+            if (document.querySelector(".login-mail-close")) document.addEventListener("click", (function(e) {
+                const overlay = document.querySelector(".overlay");
+                if (bodyLockStatus && e.target.closest(".login-mail-close")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open_login-mail");
+                    if (!e.target.closest(".login-mail-close")) document.documentElement.classList.remove("menu-open_login-mail");
+                    if (overlay) ;
+                }
+            }));
         }
         function menuClose() {
             bodyUnlock();
             document.documentElement.classList.remove("menu-open");
+            document.documentElement.classList.remove("menu-open_login");
+            document.documentElement.classList.remove("menu-open_login-mail");
         }
         function showMore() {
             window.addEventListener("load", (function(e) {
