@@ -2061,8 +2061,8 @@ input.select2-search__field::placeholder {
 
 .action-header__login_second {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 28px !important;
+  height: 28px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
