@@ -1740,12 +1740,22 @@
                     if (overlay) ;
                 }
             }));
+            if (document.querySelector(".pass-recovery-close")) document.addEventListener("click", (function(e) {
+                const overlay = document.querySelector(".overlay");
+                if (bodyLockStatus && e.target.closest(".pass-recovery-close")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open_password-recovery");
+                    if (!e.target.closest(".pass-recovery-close")) document.documentElement.classList.remove("menu-open_password-recovery");
+                    if (overlay) ;
+                }
+            }));
         }
         function menuClose() {
             bodyUnlock();
             document.documentElement.classList.remove("menu-open");
             document.documentElement.classList.remove("menu-open_login");
             document.documentElement.classList.remove("menu-open_login-mail");
+            document.documentElement.classList.remove("menu-open_password-recovery");
         }
         function showMore() {
             window.addEventListener("load", (function(e) {
