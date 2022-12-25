@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Reono»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<div class="rootpage__wrapper">
+			<h1>Верстка «Reono»</h1>
+			<div class="rootpage__info">
+				Особливості проекту
+			</div>
+			<h2>Готові сторінки:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Home</a></li>
+				<li><a target="_blank" href="login.html">Login</a></li>
+				<li><a target="_blank" href="login-mail.html">Login via email</a></li>
+				<li><a target="_blank" href="password-recovery-1.html">Password recovery part 1</a></li>
+				<li><a target="_blank" href="password-recovery-2.html">Password recovery part 2</a></li>
+				<li><a target="_blank" href="password-recovery-3.html">Password recovery part 3</a></li>
+				<li><a target="_blank" href="password-recovery-4.html">Password recovery part 4</a></li>
+				<li><a target="_blank" href="password-recovery-5.html">Password recovery part 5</a></li>
+				<li><a target="_blank" href="sign-up-1.html">Sign up part 1</a></li>
+				<li><a target="_blank" href="sign-up-2.html">Sign up part 2</a></li>
+				<li><a target="_blank" href="sign-up-3.html">Sign up part 3</a></li>
+				<li><a target="_blank" href="sign-up-4.html">Sign up part 4</a></li>
+				<li><a target="_blank" href="sign-up-5.html">Sign up part 5</a></li>
+			</ol>
+			<h2>Попапи:</h2>
+			<ol class="rootpage__list">
+				<!-- <li><a target="_blank" href="home.html#"></a></li> -->
+			</ol>
+		</div>
+		<div class="rootpage__victory victory">
+			<div class="victory__wrapper">
+				<div class="victory__title">перемога</div>
+				<div class="victory__loading"><span class="victory__blue"></span><span class="victory__yellow"></span></div>
+				<div class="victory__subtitle">
+					<span>loading</span>
+					<div class="container">
+						<div class="dot1"></div>
+						<div class="dot2"></div>
+						<div class="dot3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rootpage__wrapper rootpage__wrapper_footer">
+			<div class="rootpage__tnx">
+				<h2>Дякую за замовлення!</h2>
+				<p>Буду радий файному відгуку.</p>
+				<p>Звертайтесь ще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мої контакти:</h2>
+				<p>Почта: <a href="mailto:ovicartel@gmail.com">ovicartel@gmail.com</a></p>
+				<p>Телефон: <a href="tel:+380731554954">+3 8(073) 15-549-54</a></p>
+				<p>Соц. мережа: <a href="">посилання на соц. мережу</a></p>
+			</div>
+		</div>
+	</div>
+
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #000;
+		background-color: #fff;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		position: relative;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #000;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #000;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 60px;
+		height: 100vh;
+	}
+
+	h1 {
+		color: #000;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	h2 {
+		color: #000;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__wrapper {
+		flex: 1 1 100%;
+	}
+
+	.rootpage__wrapper_footer {
+		align-self: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		padding: 20px 65px;
+		line-height: 140%;
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+	}
+
+	.rootpage__contacts {
+		background: rgba(50, 181, 164, 0.7);
+	}
+
+	.rootpage__tnx {
+		background: rgba(194, 45, 100, 0.7);
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.victory {}
+
+	.victory__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.victory__title {
+		font-size: 45px;
+		text-transform: uppercase;
+		letter-spacing: 9px;
+	}
+
+	.victory__loading {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 700px;
+		height: 80px;
+		border: 5px solid #000;
+		border-radius: 25px;
+		padding-left: 10px;
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.35);
+	}
+
+	.victory__blue {
+		height: 25px;
+		width: 80%;
+		background-color: #0076eb;
+	}
+
+	.victory__yellow {
+		height: 25px;
+		width: 80%;
+		background-color: #fdd923;
+	}
+
+	.victory__subtitle {
+		color: #5A5A5A;
+		font-size: 40px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		display: flex;
+		gap: 10px;
+	}
+
+	.container {
+		align-self: flex-end;
+		width: 100px;
+		display: flex;
+		gap: 25px;
+		margin-bottom: 5px;
+	}
+
+	.dot1 {
+		background: #5A5A5A;
+		height: 15px;
+		width: 15px;
+		border: none;
+		border-radius: 50%;
+		animation: func 2s linear infinite;
+		animation-delay: .5s;
+	}
+
+	.dot2 {
+		animation: func 2s linear infinite;
+		animation-delay: 0s;
+		background: #5A5A5A;
+		height: 15px;
+		width: 15px;
+		border: none;
+		border-radius: 50%;
+	}
+
+	.dot3 {
+		background: #5A5A5A;
+		height: 15px;
+		width: 15px;
+		border: none;
+		border-radius: 50%;
+		animation: func 2s linear infinite;
+		animation-delay: 1s;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+
+		.victory__wrapper {
+			gap: 20px;
+		}
+
+		.victory__title {
+			font-size: 40px;
+			letter-spacing: 6px;
+		}
+
+		.victory__loading {
+			height: 65px;
+		}
+
+		.victory__blue {
+			height: 20px;
+		}
+
+		.victory__yellow {
+			height: 20px;
+		}
+
+		.victory__subtitle {
+			font-size: 35px;
+			letter-spacing: 4px;
+		}
+
+		.container {
+			gap: 15px;
+			width: 80px;
+		}
+
+		.dot1 {
+			height: 12px;
+			width: 12px;
+		}
+
+		.dot2 {
+			height: 12px;
+			width: 12px;
+		}
+
+		.dot3 {
+			height: 12px;
+			width: 12px;
+		}
+	}
+
+	@media (max-width: 450px) {
+		.victory__wrapper {
+			gap: 10px;
+		}
+
+		.victory__title {
+			letter-spacing: 4px;
+			font-size: 30px;
+		}
+
+		.victory__loading {
+			height: 55px;
+		}
+
+		.victory__blue {
+			height: 15px;
+		}
+
+		.victory__yellow {
+			height: 15px;
+		}
+
+		.victory__subtitle {
+			letter-spacing: 2px;
+			font-size: 25px;
+		}
+
+		.container {
+			gap: 10px;
+			width: 50px;
+		}
+
+		.dot1 {
+			height: 9px;
+			width: 9px;
+		}
+
+		.dot2 {
+			height: 9px;
+			width: 9px;
+		}
+
+		.dot3 {
+			height: 9px;
+			width: 9px;
+		}
+	}
+
+	@keyframes func {
+		0% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+</style>
+
+</html>
