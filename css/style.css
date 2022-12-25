@@ -2465,6 +2465,10 @@ input.select2-search__field::placeholder {
           align-items: center;
 }
 
+.login__close {
+  width: auto !important;
+}
+
 .login__close._icon-x:before {
   font-size: 24px;
   font-weight: 400;
@@ -2774,7 +2778,7 @@ input.select2-search__field::placeholder {
 }
 
 .form__btn {
-  width: 100%;
+  width: 100% !important;
 }
 
 .form__btn:not(:last-child) {
