@@ -2398,32 +2398,6 @@
             console.log(link);
             let url = document.location.href;
             for (let i = 0; i < link.length; i++) if (url == link[i].href) link[i].classList.add("_active");
-            const animItems = document.querySelectorAll("._anim-items");
-            if (animItems.length > 0) {
-                console.log("anim");
-                window.addEventListener("scroll", animOnScroll);
-                function animOnScroll() {
-                    for (let index = 0; index < animItems.length; index++) {
-                        const animItem = animItems[index];
-                        const animItemHeight = animItem.offsetHeight;
-                        const animItemOffset = offset(animItem).top;
-                        const animStart = 4;
-                        let animItemPoint = window.innerHeight - animItemHeight / animStart;
-                        if (animItemHeight > window.innerHeight) animItemPoint = window.innerHeight - window.innerHeight / animStart;
-                        if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_active"); else if (!animItem.classList.contains("_anim-no-hide")) animItem.classList.remove("_active");
-                    }
-                }
-                function offset(el) {
-                    const rect = el.getBoundingClientRect(), scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                    return {
-                        top: rect.top + scrollTop,
-                        left: rect.left + scrollLeft
-                    };
-                }
-                setTimeout((() => {
-                    animOnScroll();
-                }), 300);
-            }
             new Swiper(".mySwiperVehicle", {
                 slidesPerView: 10,
                 speed: 300,
@@ -2605,6 +2579,53 @@
                     }
                 }
             });
+            new Swiper(".mySwiperNavMenu", {
+                slidesPerView: 7,
+                spaceBetween: 0,
+                speed: 300,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3,
+                        spaceBetween: 0
+                    },
+                    350: {
+                        slidesPerView: 3.5
+                    },
+                    400: {
+                        slidesPerView: 3.6
+                    },
+                    430: {
+                        slidesPerView: 4
+                    },
+                    490: {
+                        slidesPerView: 3.5
+                    },
+                    560: {
+                        slidesPerView: 3,
+                        spaceBetween: 0
+                    },
+                    630: {
+                        slidesPerView: 4.4,
+                        spaceBetween: 10
+                    },
+                    768: {
+                        slidesPerView: 4.7,
+                        spaceBetween: 10
+                    },
+                    850: {
+                        slidesPerView: 5.6,
+                        spaceBetween: 10
+                    },
+                    992: {
+                        slidesPerView: 6,
+                        spaceBetween: 15
+                    },
+                    1250: {
+                        slidesPerView: 7
+                    },
+                    1415: {}
+                }
+            });
             var formBookInputData = document.querySelector(".form-book__input_data");
             var formBookInputPrice = document.querySelector(".form-book__input_price");
             var user_iconData = document.querySelector(".form-book__wrapper-data");
@@ -2645,6 +2666,10 @@
                     $("input.select2-search__field").prop("placeholder", "Пошук..");
                 }));
             }));
+            window.addEventListener("load", windowLoad);
+            function windowLoad() {
+                document.documentElement.classList.add("loaded");
+            }
         };
         window["FLS"] = true;
         addLoadedClass();
