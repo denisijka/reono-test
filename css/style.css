@@ -2348,7 +2348,7 @@ input.select2-search__field::placeholder {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   left: 0;
   top: 0;
@@ -2803,6 +2803,12 @@ input.select2-search__field::placeholder {
   font-weight: 500;
   display: inline;
   color: #212529;
+}
+
+.login__link_hhv {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .login__btn {
@@ -3435,15 +3441,15 @@ input.select2-search__field::placeholder {
   border-radius: 8px;
 }
 
-@supports (padding-top: clamp( 1.875rem , 0.9757194245rem  +  4.4964028777vw , 5rem )) {
+@supports (padding-top: clamp( 1.875rem , 1.7850719424rem  +  0.4496402878vw , 2.1875rem )) {
   .main-filter {
-    padding-top: clamp( 1.875rem , 0.9757194245rem  +  4.4964028777vw , 5rem );
+    padding-top: clamp( 1.875rem , 1.7850719424rem  +  0.4496402878vw , 2.1875rem );
   }
 }
 
-@supports not (padding-top: clamp( 1.875rem , 0.9757194245rem  +  4.4964028777vw , 5rem )) {
+@supports not (padding-top: clamp( 1.875rem , 1.7850719424rem  +  0.4496402878vw , 2.1875rem )) {
   .main-filter {
-    padding-top: calc(1.875rem + 3.125 * (100vw - 20rem) / 69.5);
+    padding-top: calc(1.875rem + 0.3125 * (100vw - 20rem) / 69.5);
   }
 }
 
@@ -4840,16 +4846,8 @@ input.select2-search__field::placeholder {
   visibility: visible;
 }
 
-@supports (padding-top: clamp( 6.1875rem , 6.1695143885rem  +  0.0899280576vw , 6.25rem )) {
-  .custom-filter-btn {
-    padding-top: clamp( 6.1875rem , 6.1695143885rem  +  0.0899280576vw , 6.25rem );
-  }
-}
-
-@supports not (padding-top: clamp( 6.1875rem , 6.1695143885rem  +  0.0899280576vw , 6.25rem )) {
-  .custom-filter-btn {
-    padding-top: calc(6.1875rem + 0.0625 * (100vw - 20rem) / 69.5);
-  }
+.custom-filter-btn {
+  padding-top: 22px;
 }
 
 .custom-filter-btn__item {
@@ -6510,6 +6508,10 @@ input.select2-search__field::placeholder {
     max-width: 100%;
   }
 
+  .header {
+    position: fixed;
+  }
+
   .form-book__lines {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -6639,6 +6641,10 @@ input.select2-search__field::placeholder {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100px;
             flex: 0 1 100px;
+  }
+
+  .custom-filter-btn {
+    padding-top: 75px;
   }
 
   .cost-range__wrapper {
@@ -7458,6 +7464,14 @@ input.select2-search__field::placeholder {
 
   .action-header__login_heart:hover {
     color: #F83D13;
+  }
+
+  .login__link_hhv:hover {
+    background-color: #F1F2F2;
+  }
+
+  .login__link_hhv:active {
+    background-color: #e3e5e5;
   }
 
   .menu-footer__link:hover {
