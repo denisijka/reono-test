@@ -3710,19 +3710,8 @@ input.select2-search__field::placeholder {
 }
 
 .form-book__line_custom-filter-generation:not(:last-child) {
-  margin-top: 0;
-}
-
-@supports (margin-right: clamp( 0.9375rem , -0.4301470588rem  +  2.2058823529vw , 1.5rem )) {
-  .form-book__line_custom-filter-generation:not(:last-child) {
-    margin-right: clamp( 0.9375rem , -0.4301470588rem  +  2.2058823529vw , 1.5rem );
-  }
-}
-
-@supports not (margin-right: clamp( 0.9375rem , -0.4301470588rem  +  2.2058823529vw , 1.5rem )) {
-  .form-book__line_custom-filter-generation:not(:last-child) {
-    margin-right: calc(0.9375rem + 0.5625 * (100vw - 62rem) / 25.5);
-  }
+  margin-right: 24px !important;
+  margin-top: 0 !important;
 }
 
 .form-book__line_custom-filter-generation.form-book__line_last-select .select2-container {
@@ -5833,10 +5822,6 @@ input.select2-search__field::placeholder {
 }
 
 @media (min-width: 1200px) {
-  .form-book__line_custom-filter-generation {
-    max-width: 220px !important;
-  }
-
   .form-book__line_custom-filter-generation.form-book__line_last-select .select2-container {
     width: 220px !important;
   }
@@ -5892,6 +5877,10 @@ input.select2-search__field::placeholder {
 
   .form-book__line_custom-filter {
     max-width: 200px !important;
+  }
+
+  .form-book__line_custom-filter-generation {
+    max-width: 220px !important;
   }
 
   .form-book__input {
