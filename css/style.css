@@ -6329,10 +6329,6 @@ input.select2-search__field::placeholder {
             flex: 1 1 48%;
   }
 
-  .form-book__line_custom-filter:not(:last-child) {
-    margin: 0 !important;
-  }
-
   .form-book__line_custom-filter.form-book__line_select-large .select2-container {
     max-width: 100% !important;
   }
@@ -6592,6 +6588,10 @@ input.select2-search__field::placeholder {
   .form-book__line:nth-child(4),
   .form-book__line_data {
     max-width: 48% !important;
+  }
+
+  .form-book__line_custom-filter.form-book__line_select-large .select2-container {
+    width: 328px !important;
   }
 
   .form-book__buttons {
