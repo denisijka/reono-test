@@ -6036,6 +6036,10 @@ input.select2-search__field::placeholder {
     max-width: 340px !important;
   }
 
+  .form-book__line_custom-filter {
+    max-width: 200px !important;
+  }
+
   .form-book__line_custom-filter-data {
     width: 200px !important;
   }
