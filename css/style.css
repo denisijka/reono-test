@@ -6590,8 +6590,8 @@ input.select2-search__field::placeholder {
     max-width: 48% !important;
   }
 
-  .form-book__line_custom-filter.form-book__line_select-large .select2-container {
-    width: 328px !important;
+  .form-book__line_custom-filter {
+    width: 260px !important;
   }
 
   .form-book__buttons {
