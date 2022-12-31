@@ -3723,7 +3723,7 @@ input.select2-search__field::placeholder {
 }
 
 .form-book__line_custom-filter-second:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 8px !important;
 }
 
 .form-book__buttons {
