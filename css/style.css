@@ -6614,6 +6614,10 @@ input.select2-search__field::placeholder {
             flex: 1 1 100%;
   }
 
+  .form-book__line_custom-filter:not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+
   .form-book__line_custom-filter.form-book__line_select-large .select2-container {
     width: 100% !important;
   }
@@ -6624,6 +6628,7 @@ input.select2-search__field::placeholder {
 
   .form-book__line_custom-filter-data:not(:last-child) {
     margin: 0 !important;
+    margin-top: 0 !important;
   }
 
   .form-book__line_custom-filter-generation {
