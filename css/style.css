@@ -5907,13 +5907,15 @@ input.select2-search__field::placeholder {
     margin-top: 0 !important;
   }
 
+  .form-book__line:nth-child(5) {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 1311.98px) {
   .form-book__line:nth-child(4),
   .form-book__line_data {
     margin-top: 20px;
-    margin-right: 8px;
-  }
-
-  .form-book__line:nth-child(5) {
     margin-right: 8px;
   }
 }
