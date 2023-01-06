@@ -5890,6 +5890,10 @@ input.select2-search__field::placeholder {
     max-width: 200px !important;
   }
 
+  .form-book__line_custom-filter.form-check__checkbox_custom-filter {
+    margin-left: 16px;
+  }
+
   .form-book__input {
     max-width: 300px;
   }
@@ -5941,6 +5945,10 @@ input.select2-search__field::placeholder {
 @media (max-width: 1199.98px) {
   .form-book__line_custom-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
     left: 87%;
+  }
+
+  .form-book__line_custom-filter.form-check__checkbox_custom-filter {
+    margin-left: 0;
   }
 
   .form-book__line_custom-filter-generation {
