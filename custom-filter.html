@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221231175605">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230106081128">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221231175605" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20230106081128" />
 	<!-- select 2 -->
-	<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css?_v=20221231175605" rel="stylesheet" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css?_v=20230106081128" rel="stylesheet" />
 </head>
 
 <body>
@@ -154,7 +154,9 @@
 			<section class="page__nav-menu nav-menu">
 				<div class="nav-menu__container">
 					<h2 class="nav-menu__subtitle">Розширений пошук</h2>
-					<nav class="nav-menu__menu">
+				</div>
+				<nav class="nav-menu__menu nav-menu-custom-filter">
+					<div class="nav-menu__container">
 						<div class="nav-menu__swiper swiper mySwiperNavMenu">
 							<div class="nav-menu__swiper-wrapper swiper-wrapper">
 								<div class="nav-menu__swiper-slide swiper-slide"><a href="#" class="nav-menu__item"><span class="nav-menu__link">Основне</span></a></div>
@@ -166,9 +168,9 @@
 								<div class="nav-menu__swiper-slide swiper-slide"><a href="#" data-goto=".extra" data-goto-top="50" class="nav-menu__item"><span class="nav-menu__link">Додатково</span></a></div>
 							</div>
 						</div>
-					</nav>
-				</div>
-				<div class="nav-menu__divider"></div>
+					</div>
+				</nav>
+				<!-- <div class="nav-menu__divider"></div> -->
 			</section>
 			<section class="page__main-filter main-filter main-filter_custom-filter">
 				<div class="main-filter__container">
@@ -405,6 +407,7 @@
 										</select>
 									</label>
 								</div>
+								<!-- <div data-popup="#_popup-custom-filter-generation" class="gen">sds</div> -->
 								<div class="form-book__line form-book__line_custom-filter form-check__checkbox form-check__checkbox_custom-filter">
 									<input id="c_1" data-error="Error" required class="form-check__checkbox-input" type="checkbox" value="1" name="form[agree]">
 									<label for="c_1" class="form-check__checkbox-label form-check__checkbox-label_custom-filter _icon-check"><span class="form-check__checkbox-text">Виключити з пошуку</label>
@@ -988,16 +991,39 @@
 			</div>
 		</div>
 	</div>
+	<div id="_popup-custom-filter-generation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup-generation">
+					<button data-close type="button" class="popup__close"></button>
+					<h3 class="popup-generation__subtitle">Покоління</h3>
+					<div class="popup-generation__items">
+						<div class="popup-generation__item">
+							<div class="popup-generation__img">
+								<img src="img/custom-filter/popup-custom-filtimg-1.jpg" srcset="
+                  img/custom-filter/popup-custom-filtimg-1.jpg         1x,
+                  img/main/custom-filter/popup-custom-filtimg-1@2x.jpg 2x
+                " alt="" />
+							</div>
+							<img src="" alt="" />
+							<h2 class="popup-generation__label">II покоління рестайлінг 2</h2>
+							<span class="popup-generation__date">2012 - 2014</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<script src="js/app.min.js?_v=20221231175605"></script>
-	<script type="" src="js/libs/select2.min.js?_v=20221231175605"></script>
+	<script src="js/app.min.js?_v=20230106081128"></script>
+	<script type="" src="js/libs/select2.min.js?_v=20230106081128"></script>
 	<div class="overlay"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221231175605"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20221231175605"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?_v=20221231175605"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20221231175605"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js?_v=20221231175605"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js?_v=20221231175605" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20230106081128"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230106081128"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?_v=20230106081128"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20230106081128"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js?_v=20230106081128"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js?_v=20230106081128" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 </html>
