@@ -2670,6 +2670,9 @@
             function windowLoad() {
                 document.documentElement.classList.add("loaded");
             }
+            $(window).scroll((function() {
+                if ($(this).scrollTop() > 190) $(".nav-menu-custom-filter").addClass("sticky"); else $(".nav-menu-custom-filter").removeClass("sticky");
+            }));
         };
         window["FLS"] = true;
         addLoadedClass();
