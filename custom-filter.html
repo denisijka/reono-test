@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230106081128">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230106093605">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20230106081128" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20230106093605" />
 	<!-- select 2 -->
-	<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css?_v=20230106081128" rel="stylesheet" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css?_v=20230106093605" rel="stylesheet" />
 </head>
 
 <body>
@@ -511,16 +511,16 @@
 							<div class="transmission__wrapper">
 								<div class="transmission__inner">
 									<h2 class="transmission__label transmission__label_custom-filter">Коробка передач</h2>
-									<div class="transmission__radio radio-custom-filter">
-										<input type="radio" name="radio-t" id="t-1" checked>
+									<div class="transmission__radio radio-custom-filter ">
+										<input type="radio" name="t1" id="t-1" checked>
 										<label for="t-1">Механіка</label>
-										<input type="radio" name="radio-t" id="t-2">
+										<input type="radio" name="t1" id="t-2">
 										<label for="t-2">Автомат</label>
-										<input type="radio" name="radio-t" id="t-3">
+										<input type="radio" name="t1" id="t-3">
 										<label for="t-3">Варіатор</label>
-										<input type="radio" name="radio-t" id="t-4">
+										<input type="radio" name="t1" id="t-4">
 										<label for="t-4">Типтронік</label>
-										<input type="radio" name="radio-t" id="t-5">
+										<input type="radio" name="t1" id="t-5">
 										<label for="t-5">Варіатор</label>
 									</div>
 								</div>
@@ -537,18 +537,18 @@
 								</div>
 								<div class="transmission__inner">
 									<h2 class="transmission__label transmission__label_custom-filter">Паливо</h2>
-									<div class="transmission__radio radio-custom-filter">
-										<input type="radio" name="radio-f" id="f-1" checked>
+									<div class="transmission__radio radio-custom-filter checkbox-custom-filter">
+										<input type="checkbox" name="f-1" id="f-1" checked>
 										<label for="f-1">Бензин</label>
-										<input type="radio" name="radio-f" id="f-2">
+										<input type="checkbox" name="f-2" id="f-2">
 										<label for="f-2">Дизель</label>
-										<input type="radio" name="radio-f" id="f-3">
+										<input type="checkbox" name="f-3" id="f-3">
 										<label for="f-3">Газ</label>
-										<input type="radio" name="radio-f" id="f-4">
+										<input type="checkbox" name="f-4" id="f-4">
 										<label for="f-4">Газ/Бензин</label>
-										<input type="radio" name="radio-f" id="f-5">
+										<input type="checkbox" name="f-5" id="f-5">
 										<label for="f-5">Електро</label>
-										<input type="radio" name="radio-f" id="f-6">
+										<input type="checkbox" name="f-6" id="f-6">
 										<label for="f-6">Інше</label>
 									</div>
 								</div>
@@ -631,23 +631,23 @@
 						<form action="#" class="color-checkbox">
 							<h2 class="color-checkbox__label color-checkbox__label_custom-filter">Колір</h2>
 							<div class="color-checkbox__items">
-								<input id="black-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-black" type="radio" name="color">
+								<input id="black-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-black" type="checkbox" name="color">
 								<label for="black-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-black form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Чорний</label>
-								<input id="gray-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-gray" type="radio" name="color">
+								<input id="gray-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-gray" type="checkbox" name="color">
 								<label for="gray-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-gray form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Сірий</label>
-								<input id="white-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-white" type="radio" name="color">
+								<input id="white-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-white" type="checkbox" name="color">
 								<label for="white-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-white form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Білий</label>
-								<input id="yellow-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-yellow" type="radio" name="color">
+								<input id="yellow-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-yellow" type="checkbox" name="color">
 								<label for="yellow-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-yellow form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Жовтий</label>
-								<input id="red-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-red" type="radio" name="color">
+								<input id="red-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-red" type="checkbox" name="color">
 								<label for="red-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-red form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Червоний</label>
-								<input id="green-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-green" type="radio" name="color">
+								<input id="green-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-green" type="checkbox" name="color">
 								<label for="green-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-green form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Зелений</label>
-								<input id="blue-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-blue" type="radio" name="color">
+								<input id="blue-color" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-blue" type="checkbox" name="color">
 								<label for="blue-color" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-blue form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Синій</label>
 							</div>
 							<div class="color-checkbox__checkbox-metal form-check__checkbox-metal">
-								<input id="metalic-color" type="radio" value="1" name="color">
+								<input id="metalic-color" type="checkbox" value="1" name="color">
 								<label for="metalic-color" class="">Металік</label>
 							</div>
 						</form>
@@ -851,19 +851,19 @@
 							<div class="form-features__item form-features__item_equip">
 								<h2 class="form-features__label form-features__label_custom-filter">Колір салону</h2>
 								<div class="color-checkbox__items color-checkbox__items_equip">
-									<input checked id="black-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-black" type="radio" name="color-salon">
+									<input checked id="black-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-black" type="checkbox" name="color-salon">
 									<label for="black-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-black form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Чорний</label>
-									<input id="gray-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-gray" type="radio" name="color-salon">
+									<input id="gray-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-gray" type="checkbox" name="color-salon">
 									<label for="gray-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-gray form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Сірий</label>
-									<input id="white-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-white" type="radio" name="color-salon">
+									<input id="white-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-white" type="checkbox" name="color-salon">
 									<label for="white-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-white form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Білий</label>
-									<input id="yellow-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-yellow" type="radio" name="color-salon">
+									<input id="yellow-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-yellow" type="checkbox" name="color-salon">
 									<label for="yellow-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-yellow form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Жовтий</label>
-									<input id="red-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-red" type="radio" name="color-salon">
+									<input id="red-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-red" type="checkbox" name="color-salon">
 									<label for="red-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-red form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Червоний</label>
-									<input id="green-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-green" type="radio" name="color-salon">
+									<input id="green-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-green" type="checkbox" name="color-salon">
 									<label for="green-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-green form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Зелений</label>
-									<input id="blue-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-blue" type="radio" name="color-salon">
+									<input id="blue-color-salon" data-error="Error" required class="form-check__checkbox-input form-check__checkbox-input_color-blue" type="checkbox" name="color-salon">
 									<label for="blue-color-salon" class="form-check__checkbox-label form-check__checkbox-label_custom-filter form-check__checkbox-label_color-blue form-check__checkbox-label_color-border _icon-check"><span class="form-check__checkbox-text">Синій</label>
 								</div>
 							</div>
@@ -1015,15 +1015,15 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20230106081128"></script>
-	<script type="" src="js/libs/select2.min.js?_v=20230106081128"></script>
+	<script src="js/app.min.js?_v=20230106093605"></script>
+	<script type="" src="js/libs/select2.min.js?_v=20230106093605"></script>
 	<div class="overlay"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20230106081128"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230106081128"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?_v=20230106081128"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20230106081128"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js?_v=20230106081128"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js?_v=20230106081128" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20230106093605"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230106093605"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?_v=20230106093605"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js?_v=20230106093605"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js?_v=20230106093605"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js?_v=20230106093605" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 </html>
